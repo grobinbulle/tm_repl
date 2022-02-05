@@ -1,0 +1,20 @@
+{
+  "files": {
+    "src/components/listCourse.vue": [
+      {
+        "id": "cbb856b6-2b90-4718-aaaf-460c9331d339",
+        "line": 1,
+        "version": 0,
+        "index": 0
+      }
+    ],
+    "src/components/login.vue": [
+      {
+        "id": "6bb4f355-e391-4931-9d17-63464d14d8a7",
+        "line": 61,
+        "version": 1445,
+        "index": 1888
+      }
+    ]
+  }
+}

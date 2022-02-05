@@ -1,0 +1,153 @@
+<template>
+  <html>
+    <head>
+      <title>Exercice</title>
+      <meta charset="UTF-8">
+      <meta name="description" content="Bienvenue sur la nouvelle plateforme d'apprentissage du cours d'informatique.">
+      <meta name="keywords" content="informatique, apprentissage, plateforme, collège du sud">
+    </head>
+    <body>
+      <div class="page" :class="{'page-shift': visibleLeft, 'page-normal': !visibleLeft}" style="height: 100%;">
+        <div class="menubar-css">
+          <!-- création du menu-haut -->
+          <Menubar :model="item" style="margin-top: -65px; width: 103%; position: fixed; z-index: 4; margin-left : -1%; margin-right: -5%">
+            <!-- éléments à gauche du menu -->
+            <template #start> 
+              <Button>Retour à la page d'accueil</Button>
+              <Button icon="pi pi-arrow-right" @click="visibleLeft = true" class="p-mr-2"/>
+            </template>
+            <!-- élément à doite du menu -->
+            <template #end>
+              <span class="p-input-icon-left">
+                  <i class="pi pi-search" />
+                  <InputText type="text" v-model="value1" placeholder="Search" />
+              </span>
+              <Button icon="pi pi-user" class="p-button-rounded p-button-info" />
+            </template>
+          </Menubar>
+        </div>
+          <!-- fin du menu-haut -->
+          <!-- appel de la sidebar -->
+        <div class="toutepage">
+        <Sidebar v-model:visible="visibleLeft" :modal="false" :autoZIndex="true">
+          <p>Naviguer dans ce chapitre</p>
+          <PanelMenu :model="items" />
+        </Sidebar>
+            <h1 style="">Exercices</h1>
+          <!-- début de l'exercice -->
+          <div class="content" style="">
+            <h2> 2.1.7.2. Exercice 2</h2>
+            <div>
+              <h3>Que se passe-t-il si vous faites tourner un moteur plus vite que l’autre ?</h3>
+              <Textarea v-model="value" :autoResize="true" rows="5" cols="80" placeholder="Inscrivez votre réponse ici"/>
+            </div>
+            <Button style="background-color: #D3D3D3; border-color: #D3D3D3; color: #696969;" class="backtheorie">Revenir à la théorie</Button>
+            <Button class="envoyer">Envoyer la réponse</Button>
+            <h2> 2.1.7.2. Exercice 2</h2>
+            <div>
+              <h3>Que se passe-t-il si vous faites tourner un moteur plus vite que l’autre ?</h3>
+              <Textarea v-model="value" :autoResize="true" rows="5" cols="80" placeholder="Inscrivez votre réponse ici"/>
+            </div>
+            <Button style="background-color: #D3D3D3; border-color: #D3D3D3; color: #696969;" class="backtheorie">Revenir à la théorie</Button>
+            <Button class="envoyer">Envoyer la réponse</Button>
+          </div>
+        </div>
+        <!-- fin de l'exercice -->
+      </div>
+    </body>
+  </html>
+</template>
+
+<script>
+export default {
+
+  data() {
+    return {
+      visibleLeft: true,
+      items: [
+                {
+                    label: 'Chapitre 1',
+                    items: [
+                      {
+                          label: 'Chapitre 1.1',
+                          items: [
+                            {
+                                label: 'Chapitre 1.1.1',
+                            },
+                            {
+                                label: 'Chapitre 1.1.2',
+                            }
+                          ]
+                      },
+                      {
+                          label: 'Chapitre 1.2',
+                      },
+                      {
+                          label: 'Chapitre 1.3',
+                      }
+                    ]
+                },
+              ]
+		}
+	}
+}
+
+</script>
+
+<style scoped>
+ /* css du titre*/ 
+  h1{
+    font-size: 40px;
+    background-color: #5c7fd4;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: white;
+    width: 110%;
+    margin-left: -5%;
+    margin-right: auto;
+  }
+/* css du contenu de la page*/
+  .content{
+    margin-top: 0%;
+    display: inline-block;
+  }
+body{
+  margin-left: -0.5%;
+  margin-right: -0.5%;
+  margin-top: 0%;
+  margin-bottom: -5%;
+  padding-bottom: 10%;
+  background: linear-gradient(to bottom left, #E1E1E1 50%, #F1F1F1 50%);
+}
+  /*commande pour la gestion de la sidebar */
+  .page-normal {
+    margin-left: -10px;
+    margin-right: -15px;
+    transition-duration: 0.35s;
+
+  }
+  .page-shift {
+      margin-left: 19rem;
+      transition-duration: 0.35s;
+      margin-right: -15px;
+  }
+  /*bouton envoyer la réponse */
+  .envoyer{
+    margin: 5px;
+    background-color : #5c7fd4;
+    border-color: #5c7fd4;
+    color : white;
+    margin: 0.15em;
+  }
+  .content{
+    text-align : left;
+  }
+  /*Css des autres boutons */
+  Button{
+  margin: 5px;
+  background-color : #F9F9F9;
+  border-color: #F9F9F9;
+  color : grey;
+  margin: 0.15em;
+}
+</style>

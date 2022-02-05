@@ -1,10 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <ListCourses/>
 </template>
 
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import CoursePage from './components/CoursePage.vue'
+import index from './components/index.vue'
+import signup from './components/signup.vue'
+import login from './components/login.vue'
+import Exercice from './components/Exercice.vue'
+import ListCourses from './components/ListCourses.vue'
+import Router from 'vue-router' 
+
+
 </script>
 
 <style>
@@ -16,4 +23,5 @@ import HelloWorld from './components/HelloWorld.vue'
   color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>
