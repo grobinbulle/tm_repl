@@ -14,3 +14,9 @@ npm run dev
 ```
 npm run build
 ```
+```
+yarn add primevue primeicons vue-router
+```
+```
+yarn install 
+```

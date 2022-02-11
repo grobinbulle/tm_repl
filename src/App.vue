@@ -1,5 +1,5 @@
 <template>
-  <ListCourses/>
+  <CoursePage/>
 </template>
 
 <script setup>

@@ -41,7 +41,7 @@
       </Sidebar>
       <div class="contenu">  
                 <!-- ajout du contenu textuel de notre cour -->
-      <div class="text" style="margin-top: 0%; z-index: 1; float: none; width: 80%; height : 60%; font-size: 20px; text-align : left; margin-right : auto; margin-left: auto;">                 
+      <div class="text" style="margin-top: 0%; z-index: 1; float: none; width: 80%; height : 60%; font-size: 20px; text-align : left; margin-right : auto; margin-left: auto; font-size: 25px;">                 
                         <h3>2.1.1. Introduction </h3>
   Les robots sont des appareils mécaniques contrôlés par ordinateur, capables d’effectuer des tâches automatisées de manière autonome. Cela fait bien longtemps qu’ils jouent un rôle important dans l’industrie, dans la technologie, dans la médecine, dans la recherche et dans les sciences, à savoir dans pratiquement tous les domaines de l’activités humaines. Alors que les premiers robots étaient conçus pour assister les humains dans les tâches monotones et pénibles physiquement, les robots de nouvelle génération sont capables de collecter des données sur leur environnement à l’aide de capteurs, de prendre des décisions pertinentes ou d’adapter leur comportement en fonction de leur environnement (auto-apprentissage). On parle alors de robots auto-apprenants (self-learning robot en anglais).
 
@@ -49,7 +49,7 @@
   <br>    
                 </div>
         <!-- ajout de l'image du robot -->
-        <img src="../assets/nao.jpg" style="height : 15%; width: 15%; margin-right: 0%; margin-top: 2%;"/>
+        <img src="../assets/nao.jpg" style="height : 24rem; width: 20rem; margin-right: 0%; margin-top: 2%;"/>
       </div>
     </div>
     <!-- création d'une div englobant les éléments de fin de page -->
