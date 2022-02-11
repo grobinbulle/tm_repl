@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <div class="menubar-css">
       <!-- création du menu-haut -->
-      <Menubar :model="item" style="margin-top: -65px; width: 101%; position: fixed; z-index: 4; margin-left : 1.5%; margin-right: -10%">
+      <Menubar :model="item" style="margin-top: -65px; width: 101%; position: fixed; z-index: 4; margin-left : 1.5%; margin-right: -10%; max-height: 65px;">
         <!-- éléments à gauche du menu -->
         <template #start> 
           <Button>Retour à la page d'accueil</Button>
@@ -49,7 +49,7 @@
   <br>    
                 </div>
         <!-- ajout de l'image du robot -->
-        <img src="../assets/nao.jpg" style="height : 24rem; width: 20rem; margin-right: 0%; margin-top: 2%;"/>
+        <img src="../assets/nao.jpg" style="height : 26rem; width: 20rem; margin-right: 0%; margin-top: 2%;"/>
       </div>
     </div>
     <!-- création d'une div englobant les éléments de fin de page -->

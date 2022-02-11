@@ -55,6 +55,8 @@ body{
   padding-bottom: 10%;
   padding-top: 10%;
   margin-left: -20%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 /* contenu de toute la page*/
   .content{

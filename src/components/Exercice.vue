@@ -10,10 +10,11 @@
       <div class="page" :class="{'page-shift': visibleLeft, 'page-normal': !visibleLeft}" style="height: 100%;">
         <div class="menubar-css">
           <!-- création du menu-haut -->
-          <Menubar :model="item" style="margin-top: -65px; width: 103%; position: fixed; z-index: 4; margin-left : -1%; margin-right: -5%">
+          <Menubar :model="item" style="margin-top: -65px; width: 101%; position: fixed; z-index: 4; margin-left : 1.5%; margin-right: -10%; max-height: 65px;">
             <!-- éléments à gauche du menu -->
             <template #start> 
               <Button>Retour à la page d'accueil</Button>
+              <router-link to="https://replit.com/@grobinbulle/pagedecours#src/components/index.vue">Go to Home</router-link>
               <Button icon="pi pi-arrow-right" @click="visibleLeft = true" class="p-mr-2"/>
             </template>
             <!-- élément à doite du menu -->
@@ -107,13 +108,13 @@ export default {
     margin-right: auto;
   }
 /* css du contenu de la page*/
-  .content{
-    margin-top: 0%;
-    display: inline-block;
-  }
+.content{
+  margin-top: 0%;
+  display: inline-block;
+}
 body{
-  margin-left: -0.5%;
-  margin-right: -0.5%;
+  margin-left: -2%;
+  margin-right: -2%;
   margin-top: 0%;
   margin-bottom: -5%;
   padding-bottom: 10%;
@@ -131,17 +132,18 @@ body{
       transition-duration: 0.35s;
       margin-right: -15px;
   }
-  /*bouton envoyer la réponse */
-  .envoyer{
-    margin: 5px;
-    background-color : #5c7fd4;
-    border-color: #5c7fd4;
-    color : white;
-    margin: 0.15em;
-  }
-  .content{
-    text-align : left;
-  }
+/*bouton envoyer la réponse */
+.envoyer{
+  margin: 5px;
+  background-color : #5c7fd4;
+  border-color: #5c7fd4;
+  color : white;
+  margin: 0.15em;
+}
+.content{
+  text-align : left;
+  max-width: 90%;
+}
   /*Css des autres boutons */
   Button{
   margin: 5px;
