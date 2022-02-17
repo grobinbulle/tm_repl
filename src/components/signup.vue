@@ -30,19 +30,30 @@
           <h1>S'inscrire</h1>
           <form>
             <label for="fname">Prénom</label><br>
-            <input type="text" id="fname" name="fname"><br>
+            <input type="text" id="fname" name="fname" required><br>
             <label for="lname">Nom</label><br>
-            <input type="text" id="lname" name="lname"><br>
+            <input type="text" id="lname" name="lname" required><br>
             <label for="email">E-mail</label><br>
-            <input type="email" id="email" name="email" placeholder="prenom.nom@studentfr.ch"><br>            
-            <label for="pet-select">Ecole</label><br>
-            <select name="ecole" id="ecole">
-                <option value="">Choisissez votre classe</option>
-                <option value="GY">GY</option>
-                <option value="ECG">ECG</option>
-                <option value="EC">EC</option>
+            <input type="email" id="email" name="email" placeholder="prenom.nom@studentfr.ch" required><br>        
+            <label for="classe">Classe</label><br>
+            <select name="classe" class="choix" id="classe" required>
+                <option value="">--Choisissez votre classe--</option>
+                <option value="1ECG">1ère ECG</option>
+                <option value="2ECG">2ème ECG</option>
+                <option value="3ECG">3ème ECG</option>
+                <option value="1EC">1ère EC</option>
+                <option value="2EC">2ème EC</option>
+                <option value="3EC">3ème EC</option>
+                <option value="1GY">1ère GY</option>
+                <option value="2GY">2ème GY</option>
+                <option value="3GY">3ème GY</option>
+                <option value="4GY">4ème GY</option>
             </select><br>
-            <input type="submit" value="S'inscrire"><br>
+            <label for="password">Mot de passe</label><br>
+            <input type="password" id="password" name="password" minlength="8" required><br>
+            <label for="password">Confirmez le mot de passe</label><br>
+            <input type="password" id="password" name="password" minlength="8" required><br>
+            <input type="submit" class="envoi" value="S'inscrire"><br>
           </form>
         </div>
       </div>
@@ -75,6 +86,39 @@ body{
   margin-left: -20%;
   margin-top: 0%;
 }
+input{
+  width: 100%;
+  height: 150%;
+  font-size: 120%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  box-shadow:none;
+  border:0 none;
+  outline:0;
+}
+label{
+  font-weight: bold;
+  font-size: 130%;
+  box-shadow:none;
+  border:0 none;
+  outline:0;
+}
+.envoi{
+  background-color: #5c7fd4;
+  border-color: #5c7fd4;
+  color: white;
+  width: 60%;
+  box-shadow:none;
+  border:0 none;
+  outline:0;
+}
+.choix{
+  font-size: 130%;
+  box-shadow:none;
+  border:0 none;
+  outline:0;
+}
+
 /* bouton sign up*/
 .signupbutton{
   margin-top: 5px;
@@ -82,6 +126,13 @@ body{
   background-color : #5c7fd4;
   border-color: #5c7fd4;
   color : white;
+}
+input{
+  width: 100%;
+  height: 150%;
+  font-size: 120%;
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 /*Autres boutons */
 Button{

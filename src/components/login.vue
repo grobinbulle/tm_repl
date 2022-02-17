@@ -25,16 +25,17 @@
           </template>
         </Menubar>
       </div>
+      
       <div class="toutepage">
         <div class="content">
-          <h1>Log in</h1>
-          <h3>Username</h3>
-          <InputText type="text" v-model="value1" placeholder="Username" />
-          <h3>Password</h3>
-          <Password v-model="value4" placeholder="Confirm Password"/>
-          <div>
-            <Button class="loginbutton" style="margin: 1.5rem;">Log in</Button>
-          </div>
+          <h1>Se connecter</h1>
+          <form>
+            <label for="user">Nom d'utilisateur</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+            <label for="password">Mot de passe</label><br>
+            <input type="password" id="password" name="password" minlength="8" required><br>
+            <input type="submit" class="envoi" value="Se connecter"><br>
+          </form>
         </div>
       </div>
     </body>
@@ -50,6 +51,32 @@ body{
   margin-top: 0%;
   margin-bottom: -5%;
   background: linear-gradient(to bottom left, #5c7fd4 50%, #D3D3D3 50%);
+}
+input{
+  width: 100%;
+  height: 150%;
+  font-size: 120%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  box-shadow:none;
+  border:0 none;
+  outline:0;
+}
+label{
+  font-weight: bold;
+  font-size: 130%;
+  box-shadow:none;
+  border:0 none;
+  outline:0;
+}
+.envoi{
+  background-color: #5c7fd4;
+  border-color: #5c7fd4;
+  color: white;
+  width: 60%;
+  box-shadow:none;
+  border:0 none;
+  outline:0;
 }
 .toutepage{
   padding-bottom: 10%;

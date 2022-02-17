@@ -1,5 +1,13 @@
 {
   "files": {
+    "src/components/cheni.vue": [
+      {
+        "id": "31c959de-f125-4158-b200-fcfcbc6e4c0d",
+        "line": 27,
+        "version": 10,
+        "index": 923
+      }
+    ],
     "src/components/listCourse.vue": [
       {
         "id": "cbb856b6-2b90-4718-aaaf-460c9331d339",
@@ -11,9 +19,9 @@
     "src/components/login.vue": [
       {
         "id": "6bb4f355-e391-4931-9d17-63464d14d8a7",
-        "line": 69,
-        "version": 1584,
-        "index": 2039
+        "line": 70,
+        "version": 1600,
+        "index": 2112
       }
     ]
   }
