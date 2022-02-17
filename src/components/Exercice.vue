@@ -97,16 +97,17 @@ export default {
 
 <style scoped>
  /* css du titre*/ 
-  h1{
-    font-size: 40px;
-    background-color: #5c7fd4;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    color: white;
-    width: 110%;
-    margin-left: -5%;
-    margin-right: auto;
-  }
+h1{
+  font-size: 40px;
+  background-color: #5c7fd4;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: white;
+  width: 110%;
+  margin-left: -4%;
+  margin-right: auto;
+  max-width: 104%;
+}
 /* css du contenu de la page*/
 .content{
   margin-top: 0%;

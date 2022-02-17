@@ -1,7 +1,7 @@
 <template>
   <html>
     <head>
-      <title>Sign up</title>
+      <title>Se Connecter</title>
       <meta charset="UTF-8">
       <meta name="description" content="Bienvenue sur la nouvelle plateforme d'apprentissage du cours d'informatique.">
       <meta name="keywords" content="informatique, apprentissage, plateforme, collège du sud">
@@ -27,17 +27,23 @@
       <!-- contenu autre que le menu-haut -->
       <div class="toutepage">
         <div class="content">
-          <h1>Sign up</h1>
-          <!-- boutons d'identification -->
-          <h3>Username</h3>
-          <InputText type="text" v-model="value1" placeholder="Username" />
-          <h3>Password</h3>
-          <Password v-model="value4" placeholder="Password"/>
-          <h3>Confirm Password</h3>
-          <Password v-model="value4" placeholder=" Confirm Password"/>
-          <div>
-          <Button class="signupbutton" style="margin: 1.5rem;">Sign up</Button>
-          </div>
+          <h1>S'inscrire</h1>
+          <form>
+            <label for="fname">Prénom</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Nom</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="email">E-mail</label><br>
+            <input type="email" id="email" name="email" placeholder="prenom.nom@studentfr.ch"><br>            
+            <label for="pet-select">Ecole</label><br>
+            <select name="ecole" id="ecole">
+                <option value="">Choisissez votre classe</option>
+                <option value="GY">GY</option>
+                <option value="ECG">ECG</option>
+                <option value="EC">EC</option>
+            </select><br>
+            <input type="submit" value="S'inscrire"><br>
+          </form>
         </div>
       </div>
     </body>

@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <div class="menubar-css">
       <!-- création du menu-haut -->
-      <Menubar :model="item" style="margin-top: -65px; width: 101%; position: fixed; z-index: 4; margin-left : 1.5%; margin-right: -10%; max-height: 65px;">
+      <Menubar :model="item" style="margin-top: -65px; width: 100.7%; position: fixed; z-index: 4; margin-left : 1.5%; margin-right: -10%; max-height: 65px;">
         <!-- éléments à gauche du menu -->
         <template #start> 
           <Button>Retour à la page d'accueil</Button>
@@ -140,6 +140,7 @@ export default {
     }  
 }
 body{
+  height: 105%;
   margin-left: -2%;
   margin-right: -2%;
   margin-top: 0%;
@@ -183,8 +184,10 @@ h1{
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: white;
-  width: 100%;
-  margin-top: 10px;
+  width: 110%;
+  margin-left: -4%;
+  margin-right: auto;
+  max-width: 104%;
 }
 /*css permettant l'adaptation avec la sidebar */
 .page-normal {

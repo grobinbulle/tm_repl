@@ -173,9 +173,11 @@ p {
   color : white;
 }
 body{
-  margin-left: -0.5%;
-  margin-right: -0.5%;
+  width: 102%;
+  margin-left: -1%;
+  margin-right: -1%;
   margin-top: 0%;
+  height: 105%;
   margin-bottom: -5%;
   padding-bottom: 10%;
   background: linear-gradient(to bottom left, #E1E1E1 50%, #F1F1F1 50%);
@@ -197,7 +199,17 @@ Button{
   max-width: 25rem;
   max-height: 10%;
   display: inline-block;
-  margin-left: 2%;
+  margin-left: 1%;
+  margin-right: 1%;
+  animation: fadein 1s;    
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }
 .toutecarte{
   margin-right: auto;
@@ -210,8 +222,9 @@ h1{
   padding-bottom: 2rem;
   color: white;
   width: 110%;
-  margin-left: -7%;
+  margin-left: -4%;
   margin-right: auto;
+  max-width: 104%;
 }
 p-panelmenu{
   width: 60%;
