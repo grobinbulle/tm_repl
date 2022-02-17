@@ -9,7 +9,7 @@
     <body>
       <div class="menubar-css">
         <!-- création du menu-haut -->
-        <Menubar :model="item" style="margin-top: -65px; width: 101%; position: fixed; z-index: 4; margin-left : -1%; margin-right: -5%">
+        <Menubar :model="item" style="margin-top: -65px; width: 103%; position: fixed; z-index: 4; margin-left : -1%; margin-right: -5%">
           <!-- éléments à gauche du menu -->
           <template #start> 
             <Button>Retour à la page d'accueil</Button>
@@ -66,8 +66,10 @@
 }
 
 body{
-  margin-left: -0.5%;
-  margin-right: -0.5%;
+  width: 103%;
+  height: 110%;
+  margin-left: -1.5%;
+  margin-right: -1.5%;
   margin-top: 0%;
   margin-bottom: -5%;
   background: linear-gradient(to bottom left, #5c7fd4 50%, #D3D3D3 50%);
@@ -76,7 +78,7 @@ body{
   .content{
     text-align: left;
     display: inline-block;
-    margin-left: -10%;
+    margin-left: -5%;
     font-size: 120%;
     vertical-align: middle;
   }
@@ -117,6 +119,8 @@ label{
   box-shadow:none;
   border:0 none;
   outline:0;
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 
 /* bouton sign up*/

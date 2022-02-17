@@ -10,7 +10,7 @@
       
       <div class="menubar-css">
         <!-- création du menu-haut -->
-        <Menubar :model="item" style="margin-top: -65px; width: 101%; position: fixed; z-index: 4; margin-left : -1%; margin-right: -5%">
+        <Menubar :model="item" style="margin-top: -65px; width: 104%; position: fixed; z-index: 4; margin-left : -1%; margin-right: -5%">
           <!-- éléments à gauche du menu -->
           <template #start> 
             <Button>Retour à la page d'accueil</Button>
@@ -46,10 +46,13 @@
   export default {
 }
 body{
-  margin-left: -0.5%;
-  margin-right: -0.5%;
+  height: 110%;
+  width: 104%;
+  margin-left: -2%;
+  margin-right: -2%;
   margin-top: 0%;
   margin-bottom: -5%;
+  padding-bottom: 10%;
   background: linear-gradient(to bottom left, #5c7fd4 50%, #D3D3D3 50%);
 }
 input{
@@ -81,7 +84,7 @@ label{
 .toutepage{
   padding-bottom: 10%;
   padding-top: 10%;
-  margin-left: -20%;
+  margin-left: -15%;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -89,7 +92,7 @@ label{
   .content{
     text-align: left;
     display: inline-block;
-    margin-left: -10%;
+    margin-left: -5%;
     font-size: 150%;
     vertical-align: middle;
   }
