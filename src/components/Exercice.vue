@@ -14,7 +14,7 @@
             <!-- éléments à gauche du menu -->
             <template #start> 
               <Button>Retour à la page d'accueil</Button>
-              <router-link to="https://replit.com/@grobinbulle/pagedecours#src/components/index.vue">Go to Home</router-link>
+              <router-link to="/index.vue">Home</router-link>
               <Button icon="pi pi-arrow-right" @click="visibleLeft = true" class="p-mr-2"/>
             </template>
             <!-- élément à doite du menu -->
@@ -36,16 +36,19 @@
         </Sidebar>
             <h1 style="">Exercices</h1>
           <!-- début de l'exercice -->
-          <div class="content" style="">
+          <div class="content" style="max-width: 70%">
             <h2> 2.1.7.2. Exercice 2</h2>
             <div>
-              <h3>Que se passe-t-il si vous faites tourner un moteur plus vite que l’autre ?</h3>
-              <Textarea v-model="value" :autoResize="true" rows="5" cols="80" placeholder="Inscrivez votre réponse ici"/>
+              <form>
+                  <label for="user">Que se passe-t-il si vous faites tourner un moteur plus vite que l’autre ?</label><br>
+                  <input type="textarea" id="fname" name="fname" placeholder="Inscrivez votre réponse ici" required><br>
+                  <input type="submit" class="envoi" value="Envoyer la réponse"><br>
+                </form>
             </div>
             <Button style="background-color: #D3D3D3; border-color: #D3D3D3; color: #696969;" class="backtheorie">Revenir à la théorie</Button>
             <Button class="envoyer">Envoyer la réponse</Button>
             <h2> 2.1.7.2. Exercice 2</h2>
-            <div>
+            <div style="max-width:98%;">
               <h3>Que se passe-t-il si vous faites tourner un moteur plus vite que l’autre ?</h3>
               <Textarea v-model="value" :autoResize="true" rows="5" cols="80" placeholder="Inscrivez votre réponse ici"/>
             </div>
@@ -110,15 +113,45 @@ h1{
 }
 /* css du contenu de la page*/
 .content{
-  margin-top: 0%;
   display: inline-block;
 }
+input{
+  width: 100%;
+  height: 150%;
+  font-size: 120%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  height: 10vh;
+  box-shadow:none;
+  border:0 none;
+  outline:0;
+}
+label{
+  font-weight: bold;
+  font-size: 130%;
+  box-shadow:none;
+  border:0 none;
+  outline:0;
+}
+.envoi{
+  background-color: #5c7fd4;
+  border-color: #5c7fd4;
+  color: white;
+  width: 13rem;
+  padding: 1%;
+  border-radius: 4px;
+  box-shadow:none;
+  border:0 none;
+  outline:0;
+}
 body{
+  width: 104%;
+  height: 105%;
   margin-left: -2%;
   margin-right: -2%;
   margin-top: 0%;
   margin-bottom: -5%;
-  padding-bottom: 10%;
+  padding-bottom: 20%;
   background: linear-gradient(to bottom left, #E1E1E1 50%, #F1F1F1 50%);
 }
   /*commande pour la gestion de la sidebar */

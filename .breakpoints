@@ -19,9 +19,9 @@
     "src/components/login.vue": [
       {
         "id": "6bb4f355-e391-4931-9d17-63464d14d8a7",
-        "line": 70,
-        "version": 1600,
-        "index": 2112
+        "line": 34,
+        "version": 2065,
+        "index": 1329
       }
     ]
   }
