@@ -39,14 +39,14 @@
           <div class="content" style="max-width: 70%">
             <h2> 2.1.7.2. Exercice 2</h2>
             <div>
+              <img src="../assets/moteur.png" style="height : 34vh; width: 60vh; margin-top: 0%; margin-left: 25vh;"/>
               <form>
                   <label for="user">Que se passe-t-il si vous faites tourner un moteur plus vite que l’autre ?</label><br>
-                  <input type="textarea" id="fname" name="fname" placeholder="Inscrivez votre réponse ici" required><br>
+                  <input type="textarea" id="fname" name="fname" placeholder="Inscrivez votre réponse ici" required class="textar"><br>
                   <input type="submit" class="envoi" value="Envoyer la réponse"><br>
                 </form>
             </div>
             <Button style="background-color: #D3D3D3; border-color: #D3D3D3; color: #696969;" class="backtheorie">Revenir à la théorie</Button>
-            <Button class="envoyer">Envoyer la réponse</Button>
             <h2> 2.1.7.2. Exercice 2</h2>
             <div style="max-width:98%;">
               <h3>Que se passe-t-il si vous faites tourner un moteur plus vite que l’autre ?</h3>
@@ -119,16 +119,18 @@ input{
   width: 100%;
   height: 150%;
   font-size: 120%;
-  margin-top: 3%;
-  margin-bottom: 3%;
-  height: 10vh;
+  margin-top: 1%;
+  margin-bottom: 1%;
   box-shadow:none;
   border:0 none;
   outline:0;
 }
+.question{
+  font-size: 200%;
+}
 label{
   font-weight: bold;
-  font-size: 130%;
+  font-size: 150%;
   box-shadow:none;
   border:0 none;
   outline:0;
@@ -143,6 +145,9 @@ label{
   box-shadow:none;
   border:0 none;
   outline:0;
+}
+.textar{
+  height: 10vh;
 }
 body{
   width: 104%;
@@ -185,5 +190,15 @@ body{
   border-color: #F9F9F9;
   color : grey;
   margin: 0.15em;
+}
+.backtheorie{
+  width: 13rem;
+  font-size: 120%;
+  padding-top: -10px;
+  padding-bottom: -10px;
+  margin-left: -0.2%;
+}
+h2{
+  font-size: 150%;
 }
 </style>
