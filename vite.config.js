@@ -1,8 +1,7 @@
-import vue from '@vitejs/plugin-vue'
+import Vue from '@vitejs/plugin-vue';
+import Pages from 'vite-plugin-pages';
+import Layouts from 'vite-plugin-vue-layouts';
 
-/**
- * @type {import('vite').UserConfig}
- */
 export default {
-  plugins: [vue()]
-}
+  plugins: [Vue(), Pages(), Layouts()],
+};

@@ -1,15 +1,15 @@
 <template>
-  <Exercice/>
+  <CoursePage/>
 </template>
 
 <script setup>
-import CoursePage from './components/CoursePage.vue'
-import index from './components/index.vue'
-import signup from './components/signup.vue'
-import login from './components/login.vue'
-import Exercice from './components/Exercice.vue'
-import ListCourses from './components/ListCourses.vue'
-import Router from 'vue-router' 
+  import CoursePage from './components/CoursePage.vue'
+  import index from './components/index.vue'
+  import signup from './components/signup.vue'
+  import login from './components/login.vue'
+  import Exercice from './components/Exercice.vue'
+  import ListCourses from './components/ListCourses.vue'
+  import Router from 'vue-router' 
 </script>
 
 <style>
