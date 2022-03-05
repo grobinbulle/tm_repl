@@ -9,7 +9,7 @@
     <body>
       <div class="menubar-css">
         <!-- création du menu-haut -->
-        <Menubar :model="item" style="margin-top: -65px; width: 103%; position: fixed; z-index: 4; margin-left : -1%; margin-right: -5%">
+        <Menubar :model="item" style="margin-top: -60px; width: 103.5%; position: fixed; z-index: 4; margin-left : -1%; margin-right: -5%; margin-bottom: 0%;">
           <!-- éléments à gauche du menu -->
           <template #start> 
             <Button>Retour à la page d'accueil</Button>
@@ -59,21 +59,24 @@ body{
   margin-right: -1.5%;
   margin-top: 0%;
   margin-bottom: -5%;
-  background: linear-gradient(to bottom left, #5c7fd4 50%, #D3D3D3 50%);
 }
 /* contenu de toute la page*/
   .content{
     text-align: left;
-    display: inline-block;
-    margin-left: -5%;
+    margin-left: 13%;
     font-size: 120%;
     vertical-align: middle;
+    max-width: 70%;
+    margin-top: -5%;
   }
 .toutepage{
-  padding-bottom: 10%;
-  padding-top: 5%;
-  margin-left: -20%;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  margin-left: 0%;
   margin-top: 0%;
+  width: 103%;
+  height: 103%;
+  background: linear-gradient(to bottom left, #5c7fd4 50%, #D3D3D3 50%);
 }
 p{
   font-size: 130%;

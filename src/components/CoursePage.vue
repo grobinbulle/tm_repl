@@ -52,8 +52,11 @@
           <img src="../assets/nao.jpg" style="height : 26rem; width: 20rem; margin-right: 0%; margin-top: 2%;"/>
         </div>
       </div>
-      <div>
-        <InputText type="text" placeholder="Normal" />  
+      <div style="margin-top: 0%; z-index: 1; float: none; width: 80%; height : 60%; font-size: 20px; text-align : left; margin-right : auto; margin-left: auto; font-size: 25px;">
+        <h2>Vos Notes</h2>
+        <div>
+          <InputText type="text" placeholder="Vos Notes" />
+        </div>  
       </div>
       <!-- création d'une div englobant les éléments de fin de page -->
       <div class="findepage" style="margin-top: 0px; float: none">
