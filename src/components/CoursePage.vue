@@ -30,38 +30,42 @@
     </div>
     <div class="toutepage">
 
-    <!-- fin du menu-haut -->
-    <!-- intégration du contenu de notre page -->
-    <div class="content" style ="width: 100%;"> 
-      <h1>2.1 Le monde des robots</h1>
-      <!-- appel de la barre latérale -->
-      <Sidebar v-model:visible="visibleLeft" :modal="false" :autoZIndex="true">
-        <p>Naviguer dans ce chapitre</p>
-        <PanelMenu :model="items" />
-      </Sidebar>
-      <div class="contenu">  
-                <!-- ajout du contenu textuel de notre cour -->
-      <div class="text" style="margin-top: 0%; z-index: 1; float: none; width: 80%; height : 60%; font-size: 20px; text-align : left; margin-right : auto; margin-left: auto; font-size: 25px;">                 
-                        <h3>2.1.1. Introduction </h3>
-  Les robots sont des appareils mécaniques contrôlés par ordinateur, capables d’effectuer des tâches automatisées de manière autonome. Cela fait bien longtemps qu’ils jouent un rôle important dans l’industrie, dans la technologie, dans la médecine, dans la recherche et dans les sciences, à savoir dans pratiquement tous les domaines de l’activités humaines. Alors que les premiers robots étaient conçus pour assister les humains dans les tâches monotones et pénibles physiquement, les robots de nouvelle génération sont capables de collecter des données sur leur environnement à l’aide de capteurs, de prendre des décisions pertinentes ou d’adapter leur comportement en fonction de leur environnement (auto-apprentissage). On parle alors de robots auto-apprenants (self-learning robot en anglais).
-
-  Il existe différents types de robots : les robots industriels fixes, les robots mobiles ou les robots humanoïdes. Mais il y a une chose que tous les robots ont en commun : ils doivent tous être programmés. Il faut des humains pour décrire de manière très précise la tâche qu’un robot doit effectuer à l’aide d’une suite d’instructions, à savoir d’un programme informatique.
-  <br>    
-                </div>
-        <!-- ajout de l'image du robot -->
-        <img src="../assets/nao.jpg" style="height : 26rem; width: 20rem; margin-right: 0%; margin-top: 2%;"/>
+      <!-- fin du menu-haut -->
+      <!-- intégration du contenu de notre page -->
+      <div class="content" style ="width: 100%;"> 
+        <h1>2.1 Le monde des robots</h1>
+        <!-- appel de la barre latérale -->
+        <Sidebar v-model:visible="visibleLeft" :modal="false" :autoZIndex="true">
+          <p>Naviguer dans ce chapitre</p>
+          <PanelMenu :model="items" />
+        </Sidebar>
+        <div class="contenu">  
+                  <!-- ajout du contenu textuel de notre cour -->
+          <div class="text" style="margin-top: 0%; z-index: 1; float: none; width: 80%; height : 60%; font-size: 20px; text-align : left; margin-right : auto; margin-left: auto; font-size: 25px;">                 
+                            <h3>2.1.1. Introduction </h3>
+      Les robots sont des appareils mécaniques contrôlés par ordinateur, capables d’effectuer des tâches automatisées de manière autonome. Cela fait bien longtemps qu’ils jouent un rôle important dans l’industrie, dans la technologie, dans la médecine, dans la recherche et dans les sciences, à savoir dans pratiquement tous les domaines de l’activités humaines. Alors que les premiers robots étaient conçus pour assister les humains dans les tâches monotones et pénibles physiquement, les robots de nouvelle génération sont capables de collecter des données sur leur environnement à l’aide de capteurs, de prendre des décisions pertinentes ou d’adapter leur comportement en fonction de leur environnement (auto-apprentissage). On parle alors de robots auto-apprenants (self-learning robot en anglais).
+    
+      Il existe différents types de robots : les robots industriels fixes, les robots mobiles ou les robots humanoïdes. Mais il y a une chose que tous les robots ont en commun : ils doivent tous être programmés. Il faut des humains pour décrire de manière très précise la tâche qu’un robot doit effectuer à l’aide d’une suite d’instructions, à savoir d’un programme informatique.
+      <br>    
+          </div>
+          <!-- ajout de l'image du robot -->
+          <img src="../assets/nao.jpg" style="height : 26rem; width: 20rem; margin-right: 0%; margin-top: 2%;"/>
+        </div>
+      </div>
+      <div>
+        <InputText type="text" placeholder="Normal" />  
+      </div>
+      <!-- création d'une div englobant les éléments de fin de page -->
+      <div class="findepage" style="margin-top: 0px; float: none">
+        <Checkbox name="compris" value="J'ai compris le contenu de ce cours" v-model="cities" />
+        <Button class="p-button-raised" style="position: center; min-height: 100%;">Mark as complished</Button>
+        <Button class="p-button-raised" id="exercice" style="position: center; min-height: 100%;">Vers les exercices</Button>
+        <ProgressBar mode="dynamic" value="60" style="width: 50%; margin-left: auto; margin-right: auto; margin-top: 5%;">
+        Percent Complete: {{value}}%
+        </ProgressBar>
       </div>
     </div>
-    <!-- création d'une div englobant les éléments de fin de page -->
-    <div class="findepage" style="margin-top: 0px; float: none">
-      <Button class="p-button-raised" style="position: center; min-height: 100%;">Mark as complished</Button>
-      <Button class="p-button-raised" id="exercice" style="position: center; min-height: 100%;">Vers les exercices</Button>
-      <ProgressBar mode="dynamic" value="60" style="width: 50%; margin-left: auto; margin-right: auto; margin-top: 5%;">
-      Percent Complete: {{value}}%
-      </ProgressBar>
     </div>
-    </div>
-  </div>
   </body>
 </template>
 
