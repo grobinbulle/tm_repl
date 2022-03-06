@@ -228,9 +228,9 @@ h1{
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: white;
-  width: 103%;
+  width: 104%;
   margin-left: -4%;
-  max-width: 103%;
+  max-width: 104%;
 }
 /*css permettant l'adaptation avec la sidebar */
 .page-normal {

@@ -1,5 +1,5 @@
 <template>
-  <signup/>
+  <CoursePage/>
 </template>
 
 <script setup>
