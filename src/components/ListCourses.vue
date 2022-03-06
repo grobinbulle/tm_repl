@@ -9,7 +9,7 @@
     <body>
       <div class="menubar-css">
         <!-- création du menu-haut -->
-        <Menubar :model="item" style="margin-top: -65px; width: 103%; position: fixed; z-index: 4; margin-left : -1%; margin-right: -5%">
+        <Menubar :model="item" style="margin-top: -65px; width: 101.3%; position: fixed; z-index: 4; margin-left : 0%; margin-right: -11%; max-height: 65px;">
           <!-- éléments à gauche du menu -->
           <template #start> 
             <Button>Retour à la page d'accueil</Button>
@@ -173,13 +173,14 @@ p {
   color : white;
 }
 body{
-  width: 102%;
-  margin-left: -1%;
-  margin-right: -1%;
+  width: 105%;
+  margin-left: -1.5%;
+  margin-right: -1.5%;
   margin-top: 0%;
   height: 105%;
   margin-bottom: -5%;
   padding-bottom: 10%;
+  padding-right: 5%;
   background: linear-gradient(to bottom left, #E1E1E1 50%, #F1F1F1 50%);
 }
 /* Autres boutons de la page*/
@@ -206,28 +207,28 @@ Button{
 }
 
 #c1:hover{
-  background-color: #F9F9F9;
-  transition-duration: 1s;
+  background-color: #F1F1F1;
+  transition-duration: .5s;
 }
 #c2:hover{
-  background-color: #F9F9F9;
-  transition-duration: 1s;
+  background-color: #F1F1F1;
+  transition-duration: .5s;
 }
 #c3:hover{
-  background-color: #F9F9F9;
-  transition-duration: 1s;
+  background-color: #F1F1F1;
+  transition-duration: .5s;
 }
 #c4:hover{
-  background-color: #F9F9F9;
-  transition-duration: 1s;
+  background-color: #F1F1F1;
+  transition-duration: .5s;
 }
 #c5:hover{
-  background-color: #F9F9F9;
-  transition-duration: 1s;
+  background-color: #F1F1F1;
+  transition-duration: .5s;
 }
 #c6:hover{
-  background-color: #F9F9F9;
-  transition-duration: 1s;
+  background-color: #F1F1F1;
+  transition-duration: .5s;
 }
 @keyframes fadein {
     from {
@@ -247,10 +248,9 @@ h1{
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: white;
-  width: 110%;
-  margin-left: -4%;
-  margin-right: auto;
-  max-width: 104%;
+  width: 101%;
+  margin-left: -1%;
+  max-width: 101%;
 }
 p-panelmenu{
   width: 60%;

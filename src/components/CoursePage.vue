@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <div class="menubar-css">
       <!-- création du menu-haut -->
-      <Menubar :model="item" style="margin-top: -65px; width: 100.7%; position: fixed; z-index: 4; margin-left : 1.5%; margin-right: -10%; max-height: 65px;">
+      <Menubar :model="item" style="margin-top: -65px; width: 101.3%; position: fixed; z-index: 4; margin-left : 0%; margin-right: -11%; max-height: 65px;">
         <!-- éléments à gauche du menu -->
         <template #start> 
           <Button>Retour à la page d'accueil</Button>
@@ -149,12 +149,13 @@ export default {
     }  
 }
 body{
-  height: 105%;
-  margin-left: -2%;
-  margin-right: -3%;
+  height: 103%;
+  margin-left: -1%;
+  margin-right: -2%;
   margin-top: 0%;
   margin-bottom: -5%;
   padding-bottom: 4%;
+  padding-right: 1%;
   background: linear-gradient(to bottom left, #E1E1E1 50%, #F1F1F1 50%);
 }
 .p-inputtext-lg{
@@ -165,8 +166,7 @@ body{
   margin-bottom: 5%;
 }
 .toutepage{
-  margin-left: 0%;
-  margin-right: 0%;
+  animation:fadein 1s;
 }
 .coche:hover{
   font-size: 105%;
@@ -198,6 +198,14 @@ Button{
   color : grey;
   text-align: center;
 }
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
 navbuttton{
   background-color: #F9F9F9;
   color : grey;
@@ -220,10 +228,9 @@ h1{
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: white;
-  width: 110%;
+  width: 103%;
   margin-left: -4%;
-  margin-right: auto;
-  max-width: 104%;
+  max-width: 103%;
 }
 /*css permettant l'adaptation avec la sidebar */
 .page-normal {

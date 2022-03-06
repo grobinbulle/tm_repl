@@ -9,7 +9,7 @@
     <body>
       <div class="menubar-css">
         <!-- création du menu-haut -->
-        <Menubar :model="item" style="margin-top: -60px; width: 103.5%; position: fixed; z-index: 4; margin-left : -1%; margin-right: -5%; margin-bottom: 0%;">
+        <Menubar :model="item" style="margin-top: -59px; width: 101.3%; position: fixed; z-index: 4; margin-left : 0%; margin-right: -11%; max-height: 65px;">
           <!-- éléments à gauche du menu -->
           <template #start> 
             <Button>Retour à la page d'accueil</Button>
@@ -51,14 +51,21 @@ non dictum mauris. Nulla at tellus sagittis, viverra est a, bibendum metus.
 <style scoped>
   export default {
 }
-
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
 body{
   width: 103%;
-  height: 110%;
+  height: 103%;
   margin-left: -1.5%;
   margin-right: -1.5%;
   margin-top: 0%;
-  margin-bottom: -5%;
+  margin-bottom: -1.5%;
 }
 /* contenu de toute la page*/
   .content{
@@ -67,22 +74,30 @@ body{
     font-size: 120%;
     vertical-align: middle;
     max-width: 70%;
-    margin-top: -5%;
+    margin-top: -6%;
   }
 .toutepage{
-  padding-top: 15%;
-  padding-bottom: 15%;
+  padding-top: 12%;
+  padding-bottom: 12%;
   margin-left: 0%;
   margin-top: 0%;
   width: 103%;
   height: 103%;
+  animation: fadein 1s;
   background: linear-gradient(to bottom left, #5c7fd4 50%, #D3D3D3 50%);
 }
 p{
   font-size: 130%;
   text-align: left;
 }
-
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
 /*Autres boutons */
 Button{
   margin-left: 5px;

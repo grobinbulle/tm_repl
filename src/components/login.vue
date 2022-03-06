@@ -10,7 +10,7 @@
       
       <div class="menubar-css">
         <!-- création du menu-haut -->
-        <Menubar :model="item" style="margin-top: -65px; width: 104%; position: fixed; z-index: 4; margin-left : -1%; margin-right: -5%">
+        <Menubar :model="item" style="margin-top: -65px; width: 101.3%; position: fixed; z-index: 4; margin-left : 0%; margin-right: -11%; max-height: 65px;">
           <!-- éléments à gauche du menu -->
           <template #start> 
             <Button>Retour à la page d'accueil</Button>
@@ -87,6 +87,8 @@ label{
   margin-left: -15%;
   margin-top: auto;
   margin-bottom: auto;
+  animation: fadein 1s;
+
 }
 /* contenu de toute la page*/
   .content{
@@ -109,5 +111,13 @@ Button{
   background-color : #F9F9F9;
   border-color: #F9F9F9;
   color : grey;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }
 </style>

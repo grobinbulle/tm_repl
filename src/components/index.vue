@@ -7,7 +7,7 @@
       <meta name="keywords" content="informatique, apprentissage, plateforme, collège du sud">
     </head>
     <body>
-      <Menubar :model="item" style="margin-top: -60px; width: 105%; position: fixed; z-index: 4; margin-left : -5%; margin-right: -5%;">
+      <Menubar :model="item" style="margin-top: -55px; width: 102%; position: fixed; z-index: 4; margin-left : -2%; margin-right: -5%;">
         <template #start> 
         </template>
         <template #end>
@@ -60,6 +60,7 @@ body{
   padding-top: 8.5%;
   margin-top: 0%;
 }
+
 
 @keyframes fadein {
     from {

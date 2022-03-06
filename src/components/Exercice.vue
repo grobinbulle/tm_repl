@@ -10,7 +10,7 @@
       <div class="page" :class="{'page-shift': visibleLeft, 'page-normal': !visibleLeft}" style="height: 100%;">
         <div class="menubar-css">
           <!-- création du menu-haut -->
-          <Menubar :model="item" style="margin-top: -65px; width: 101%; position: fixed; z-index: 4; margin-left : 1.5%; margin-right: -10%; max-height: 65px;">
+          <Menubar :model="item" style="margin-top: -65px; width: 102%; position: fixed; z-index: 4; margin-left : 1%; margin-right: -14%; max-height: 65px;">
             <!-- éléments à gauche du menu -->
             <template #start> 
               <Button>Retour à la page d'accueil</Button>
@@ -39,7 +39,7 @@
           <div class="content" style="max-width: 70%">
             <h2> 2.1.7.2. Exercice 2</h2>
             <div>
-              <img src="../assets/moteur.png" style="height : 34vh; width: 60vh; margin-top: 0%; margin-left: 25vh;"/>
+              <img src="../assets/moteur.png" style="height : 34%; width: 60%; margin-top: 0%; margin-left: 20%;"/>
               <form>
                   <label for="user">Que se passe-t-il si vous faites tourner un moteur plus vite que l’autre ?</label><br>
                   <input type="textarea" id="fname" name="fname" placeholder="Inscrivez votre réponse ici" required class="textar"><br>
@@ -106,7 +106,7 @@ h1{
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: white;
-  width: 110%;
+  width: 104%;
   margin-left: -4%;
   margin-right: auto;
   max-width: 104%;
@@ -124,6 +124,10 @@ input{
   box-shadow:none;
   border:0 none;
   outline:0;
+}
+Button:hover{
+  background-color: grey;
+  transition-duration: 0.5s;
 }
 .question{
   font-size: 200%;
@@ -157,6 +161,7 @@ body{
   margin-top: 0%;
   margin-bottom: -5%;
   padding-bottom: 20%;
+  padding-right: 1%;
   background: linear-gradient(to bottom left, #E1E1E1 50%, #F1F1F1 50%);
 }
   /*commande pour la gestion de la sidebar */
@@ -179,6 +184,7 @@ body{
   color : white;
   margin: 0.15em;
 }
+
 .content{
   text-align : left;
   max-width: 90%;
@@ -197,6 +203,10 @@ body{
   padding-top: -10px;
   padding-bottom: -10px;
   margin-left: -0.2%;
+}
+.backtheorie:hover{
+  background-color: blue;
+  transition-duration: .5s;
 }
 h2{
   font-size: 150%;

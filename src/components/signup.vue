@@ -9,7 +9,7 @@
     <body>
       <div class="menubar-css">
         <!-- création du menu-haut -->
-        <Menubar :model="item" style="margin-top: -65px; width: 103%; position: fixed; z-index: 4; margin-left : -1%; margin-right: -5%">
+        <Menubar :model="item" style="margin-top: -65px; width: 101.3%; position: fixed; z-index: 4; margin-left : 0%; margin-right: -11%; max-height: 65px;">
           <!-- éléments à gauche du menu -->
           <template #start> 
             <Button>Retour à la page d'accueil</Button>
@@ -87,6 +87,7 @@ body{
   padding-top: 5%;
   margin-left: -20%;
   margin-top: 0%;
+  animation: fadein 1s; 
 }
 input{
   width: 100%;
@@ -144,5 +145,13 @@ Button{
   background-color : #F9F9F9;
   border-color: #F9F9F9;
   color : grey;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }
 </style>
