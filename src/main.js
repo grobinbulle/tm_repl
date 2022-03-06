@@ -15,6 +15,8 @@ import VueRouter from 'vue-router';
 import InputText from 'primevue/inputtext';
 import Textarea from 'primevue/textarea';
 import Card from 'primevue/card';
+import Checkbox from 'primevue/checkbox';
+
 
 import 'primevue/resources/themes/saga-blue/theme.css';
 import 'primevue/resources/primevue.min.css';
@@ -31,5 +33,6 @@ app.component('ProgressBar', ProgressBar);
 app.component('InputText', InputText);
 app.component('Textarea', Textarea);
 app.component('Card', Card);
+app.component('Checkbox', Checkbox);
 
 app.mount('#app');

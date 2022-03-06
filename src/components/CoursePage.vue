@@ -48,24 +48,26 @@
       Il existe différents types de robots : les robots industriels fixes, les robots mobiles ou les robots humanoïdes. Mais il y a une chose que tous les robots ont en commun : ils doivent tous être programmés. Il faut des humains pour décrire de manière très précise la tâche qu’un robot doit effectuer à l’aide d’une suite d’instructions, à savoir d’un programme informatique.
       <br>    
           </div>
-          <!-- ajout de l'image du robot -->
-          <img src="../assets/nao.jpg" style="height : 26rem; width: 20rem; margin-right: 0%; margin-top: 2%;"/>
+          <div class="visuel">
+            <!-- ajout de l'image du robot -->
+            <iframe width="80%" height="80%" src="https://www.youtube.com/embed/vMVg9QMOxvk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <figure><img src="../assets/nao.jpg" style="height : 85%; width: 60%; margin:left: 50%; margin-right: 0%; margin-top: 0%;"/><figcaption>Le robot nao</figcaption></figure>
+          </div>
         </div>
       </div>
       <div style="margin-top: 0%; z-index: 1; float: none; width: 80%; height : 60%; font-size: 20px; text-align : left; margin-right : auto; margin-left: auto; font-size: 25px;">
         <h2>Vos Notes</h2>
         <div>
-          <InputText type="text" placeholder="Vos Notes" />
+          <InputText type="text" class="p-inputtext-lg"  placeholder="Vos notes" />
         </div>  
       </div>
       <!-- création d'une div englobant les éléments de fin de page -->
       <div class="findepage" style="margin-top: 0px; float: none">
-        <Checkbox name="compris" value="J'ai compris le contenu de ce cours" v-model="cities" />
-        <Button class="p-button-raised" style="position: center; min-height: 100%;">Mark as complished</Button>
+        <div>
+          <input type="checkbox" id="compris" name="J'ai compris le contenu de ce chapitre">
+          <label for="compris">J'ai compris le contenu de ce chapitre</label>
+        </div>
         <Button class="p-button-raised" id="exercice" style="position: center; min-height: 100%;">Vers les exercices</Button>
-        <ProgressBar mode="dynamic" value="60" style="width: 50%; margin-left: auto; margin-right: auto; margin-top: 5%;">
-        Percent Complete: {{value}}%
-        </ProgressBar>
       </div>
     </div>
     </div>
@@ -152,31 +154,40 @@ body{
   margin-right: -2%;
   margin-top: 0%;
   margin-bottom: -5%;
-  padding-bottom: 10%;
+  padding-bottom: 4%;
   background: linear-gradient(to bottom left, #E1E1E1 50%, #F1F1F1 50%);
+}
+.p-inputtext-lg{
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
 }
 .toutepage{
   margin-left: 0%;
   margin-right: 0%;
 }
+figcaption{
+  font-weight: bold;
+}
 /* css du bouton des exercices*/
 #exercice{
   background-color: #ff8000;
   border-color: #ff8000;
+  color: white;
+  display: inline-block;
+  font-size: 120%;
 }
-/* css du bouton mark as completed*/
-.p-button-raised{
-  background-color: limegreen;
-  border-color: limegreen;
-  margin-bottom: 10px;
-  color : white;
-}
+
+
 /* bouton du menu-haut*/
 Button{
   margin: 5px;
   background-color : #F9F9F9;
   border-color: #F9F9F9;
   color : grey;
+  text-align: center;
 }
 navbuttton{
   background-color: #F9F9F9;
@@ -184,6 +195,15 @@ navbuttton{
 }
 .p-button-rounded{
   background-color : #F9F9F9;
+}
+.visuel{
+  display: grid;
+  grid-template-columns: 60% 40% 60%;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 15%;
+  margin-top: 3%;
+  max-width: 80%;
 }
 h1{
   font-size: 40px;
@@ -211,5 +231,20 @@ h1{
 a {
   color : grey;
 }
-
+.findepage{
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+label {
+  font-size: 150%;
+  color: grey;
+  font-weight: bold;
+}
+input{
+  size: 150%;
+}
 </style>
