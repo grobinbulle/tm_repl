@@ -1,6 +1,7 @@
 <template>
   <!-- création du head -->
   <head>
+    import * from './javascript/CoursePage.js'
     <title>Page de cours</title>
     <meta charset="UTF-8">
     <meta name="description" content="Bienvenue sur la nouvelle plateforme d'apprentissage du cours d'informatique.">
@@ -57,13 +58,13 @@
       </div>
       <div style="margin-top: 0%; z-index: 1; float: none; width: 80%; height : 60%; font-size: 20px; text-align : left; margin-right : auto; margin-left: auto; font-size: 25px;">
         <h2>Vos Notes</h2>
-        <div>
-          <InputText type="text" class="p-inputtext-lg"  placeholder="Vos notes" />
+        <div id="app">
+          <InputText type="text" class="p-inputtext-lg" v-model="name" placeholder="Vos notes" />
         </div>  
       </div>
       <!-- création d'une div englobant les éléments de fin de page -->
       <div class="findepage" style="margin-top: 0px; float: none">
-        <div>
+        <div class="coche">
           <input type="checkbox" id="compris" name="J'ai compris le contenu de ce chapitre">
           <label for="compris">J'ai compris le contenu de ce chapitre</label>
         </div>
@@ -77,7 +78,6 @@
 <script>
 
 export default {
-
   data() {
     return {
       visibleLeft: true,
@@ -151,7 +151,7 @@ export default {
 body{
   height: 105%;
   margin-left: -2%;
-  margin-right: -2%;
+  margin-right: -3%;
   margin-top: 0%;
   margin-bottom: -5%;
   padding-bottom: 4%;
@@ -168,6 +168,10 @@ body{
   margin-left: 0%;
   margin-right: 0%;
 }
+.coche:hover{
+  font-size: 105%;
+  transition-duration: .5s;
+}
 figcaption{
   font-weight: bold;
 }
@@ -179,7 +183,12 @@ figcaption{
   display: inline-block;
   font-size: 120%;
 }
-
+#exercice:hover{
+  background-color: orange;
+  height: 105%;
+  width: 105%;
+  transition-duration: .5s;
+}
 
 /* bouton du menu-haut*/
 Button{

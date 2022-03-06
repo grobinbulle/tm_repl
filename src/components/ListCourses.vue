@@ -28,7 +28,7 @@
         <div class="content" style ="margin-top : 50px; width: 105%;">
           <h1>Choisissez votre cours</h1>
           <div class="toutecarte"> 
-            <Card class="carte">
+            <Card class="carte" id="c1">
               <template #header>
               </template>
               <template #title>
@@ -42,7 +42,7 @@
                 <Button class="Bouton">Aller au cours</Button>
               </template>
             </Card>
-            <Card class="carte">
+            <Card class="carte" id="c2">
               <template #header>
               </template>
               <template #title>
@@ -56,7 +56,7 @@
                 <Button class="Bouton">Aller au cours</Button>
               </template>
             </Card>
-            <Card class="carte">
+            <Card class="carte" id="c3">
               <template #header>
               </template>
               <template #title>
@@ -70,7 +70,7 @@
                 <Button class="Bouton">Aller au cours</Button>
               </template>
             </Card>
-            <Card class="carte">
+            <Card class="carte" id="c4">
               <template #header>
               </template>
               <template #title>
@@ -84,7 +84,7 @@
                 <Button class="Bouton">Aller au cours</Button>
               </template>
             </Card>
-            <Card class="carte">
+            <Card class="carte" id="c5">
               <template #header>
               </template>
               <template #title>
@@ -98,7 +98,7 @@
                 <Button class="Bouton">Aller au cours</Button>
               </template>
             </Card>
-            <Card class="carte">
+            <Card class="carte" id="c6">
               <template #header>
               </template>
               <template #title>
@@ -194,6 +194,7 @@ Button{
   border-color: #5c7fd4;
   color: white;
 }
+
 .carte{
   margin-top: 2%;
   max-width: 25rem;
@@ -202,6 +203,31 @@ Button{
   margin-left: 1%;
   margin-right: 1%;
   animation: fadein 1s;    
+}
+
+#c1:hover{
+  background-color: #F9F9F9;
+  transition-duration: 1s;
+}
+#c2:hover{
+  background-color: #F9F9F9;
+  transition-duration: 1s;
+}
+#c3:hover{
+  background-color: #F9F9F9;
+  transition-duration: 1s;
+}
+#c4:hover{
+  background-color: #F9F9F9;
+  transition-duration: 1s;
+}
+#c5:hover{
+  background-color: #F9F9F9;
+  transition-duration: 1s;
+}
+#c6:hover{
+  background-color: #F9F9F9;
+  transition-duration: 1s;
 }
 @keyframes fadein {
     from {
