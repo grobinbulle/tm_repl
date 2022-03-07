@@ -44,6 +44,7 @@ body{
   margin-right: -0.5%;
   margin-top: -0.5%;
   margin-bottom: -0.5%;
+  padding-bottom: 10%;
   background: linear-gradient(to bottom left, #E1E1E1 50%, #F1F1F1 50%);
 }
 .content{

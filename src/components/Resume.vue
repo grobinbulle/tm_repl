@@ -77,8 +77,8 @@ body{
     margin-top: -6%;
   }
 .toutepage{
-  padding-top: 12%;
-  padding-bottom: 12%;
+  padding-top: 17%;
+  padding-bottom: 17%;
   margin-left: 0%;
   margin-top: 0%;
   width: 103%;
