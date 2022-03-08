@@ -28,7 +28,7 @@
       <div class="toutepage">
         <div class="content">
           <h1>Résumé</h1>
-          <p>Nous avons vue que, dans ce chapitre, bla bla bla bla bla bla
+          <p>Nous avons vu que, dans ce chapitre, bla bla bla bla bla bla
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, 
 pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. 
 Donec scelerisque sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, 
