@@ -1,5 +1,5 @@
 <template>
-  <Resume/>
+  <Exercice/>
 </template>
 
 <script setup>

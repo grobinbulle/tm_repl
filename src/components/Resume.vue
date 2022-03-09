@@ -9,18 +9,18 @@
     <body>
       <div class="menubar-css">
         <!-- création du menu-haut -->
-        <Menubar :model="item" style="margin-top: -59px; width: 101.3%; position: fixed; z-index: 4; margin-left : 0%; margin-right: -11%; max-height: 65px;">
+        <Menubar :model="item" style="margin-top: -60px; width: 101.3%; position: fixed; z-index: 4; margin-left : 0%; margin-right: -11%; max-height: 65px;">
           <!-- éléments à gauche du menu -->
           <template #start> 
-            <Button>Retour à la page d'accueil</Button>
+            <Button class="but-menubar">Retour à la page d'accueil</Button>
           </template>
           <!-- élément à doite du menu -->
+          <template>
+          </template>
           <template #end>
-            <span class="p-input-icon-left">
-                <i class="pi pi-search" />
-                <InputText type="text" v-model="value1" placeholder="Search" />
-            </span>
-            <Button icon="pi pi-user" class="p-button-rounded p-button-info" />
+            <div class="but-menubar">
+              <Button icon="pi pi-user" class="p-button-rounded p-button-info user-but" />
+            </div>
           </template>
         </Menubar>
       </div>
@@ -105,4 +105,14 @@ Button{
   border-color: #F9F9F9;
   color : grey;
 }
+.but-menubar{
+  font-size: 2vh;
+  width : 18vh;
+  height: 7vh;
+  align-items: center;
+}
+.user-but{
+  margin-bottom: -18%;
+}
+
 </style>

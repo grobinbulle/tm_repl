@@ -13,16 +13,11 @@
           <Menubar :model="item" style="margin-top: -65px; width: 102%; position: fixed; z-index: 4; margin-left : 1%; margin-right: -14%; max-height: 65px;">
             <!-- éléments à gauche du menu -->
             <template #start> 
-              <Button>Retour à la page d'accueil</Button>
-              <router-link to="/index.vue">Home</router-link>
+              <Button class="but-menubar">Retour à la page d'accueil</Button>
               <Button icon="pi pi-arrow-right" @click="visibleLeft = true" class="p-mr-2"/>
             </template>
             <!-- élément à doite du menu -->
             <template #end>
-              <span class="p-input-icon-left">
-                  <i class="pi pi-search" />
-                  <InputText type="text" v-model="value1" placeholder="Search" />
-              </span>
               <Button icon="pi pi-user" class="p-button-rounded p-button-info" />
             </template>
           </Menubar>
@@ -115,6 +110,15 @@ h1{
 .content{
   display: inline-block;
 }
+.but-menubar{
+  font-size: 2vh;
+  width : 18vh;
+  height: 7vh;
+  align-items: center;
+}
+.user-but{
+  margin-bottom: -18%;
+}
 input{
   width: 100%;
   height: 150%;
@@ -154,15 +158,23 @@ label{
   height: 10vh;
 }
 body{
-  width: 104%;
+  width: 105%;
   height: 105%;
   margin-left: -2%;
-  margin-right: -2%;
+  margin-right: -3%;
   margin-top: 0%;
   margin-bottom: -5%;
   padding-bottom: 20%;
   padding-right: 1%;
-  background: linear-gradient(to bottom left, #E1E1E1 50%, #F1F1F1 50%);
+}
+
+html{
+  background: linear-gradient(to bottom left, #E1E1E1 50%, #F1F1F1 50%) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  background-size: 100% 100%;
 }
   /*commande pour la gestion de la sidebar */
   .page-normal {

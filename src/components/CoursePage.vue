@@ -16,16 +16,12 @@
       <Menubar :model="item" style="margin-top: -65px; width: 101.3%; position: fixed; z-index: 4; margin-left : 0%; margin-right: -11%; max-height: 65px;">
         <!-- éléments à gauche du menu -->
         <template #start> 
-          <Button>Retour à la page d'accueil</Button>
-          <Button icon="pi pi-arrow-right" @click="visibleLeft = true" class="p-mr-2"/>
+          <Button class="but-menubar">Retour à la page d'accueil</Button>
+          <Button icon="pi pi-arrow-right" @click="visibleLeft = true" class="p-mr-2 arrow-but"/>
         </template>
         <!-- élément à doite du menu -->
         <template #end>
-          <span class="p-input-icon-left">
-              <i class="pi pi-search" />
-              <InputText type="text" v-model="value1" placeholder="Search" />
-          </span>
-          <Button icon="pi pi-user" class="p-button-rounded p-button-info" />
+          <Button icon="pi pi-user" class="p-button-rounded p-button-info user-but" />
         </template>
       </Menubar>
     </div>
@@ -222,6 +218,14 @@ navbuttton{
   margin-top: 3%;
   max-width: 80%;
 }
+.but-menubar{
+  font-size: 2vh;
+  width : 18vh;
+  height: 7vh;
+  align-items: center;
+}
+
+
 h1{
   font-size: 40px;
   background-color: #5c7fd4;
