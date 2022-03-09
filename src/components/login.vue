@@ -49,7 +49,7 @@ body{
   margin-top: 0%;
   margin-bottom: -5%;
   padding-bottom: 10%;
-  background: linear-gradient(to bottom left, #5c7fd4 50%, #D3D3D3 50%);
+  background: linear-gradient(to bottom left, #5c7fd4 50%, #D3D3D3 50%) no-repeat center center fixed;
 }
 .but-menubar{
   font-size: 2vh;

@@ -77,14 +77,14 @@ body{
     margin-top: -6%;
   }
 .toutepage{
-  padding-top: 17%;
-  padding-bottom: 17%;
+  padding-top: 15%;
+  padding-bottom: 15%;
   margin-left: 0%;
   margin-top: 0%;
   width: 103%;
   height: 103%;
   animation: fadein 1s;
-  background: linear-gradient(to bottom left, #5c7fd4 50%, #D3D3D3 50%);
+  background: linear-gradient(to bottom left, #5c7fd4 50%, #D3D3D3 50%) no-repeat center center fixed;
 }
 p{
   font-size: 130%;

@@ -1,5 +1,5 @@
 <template>
-  <Exercice/>
+  <signup/>
 </template>
 
 <script setup>

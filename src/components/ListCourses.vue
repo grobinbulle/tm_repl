@@ -186,7 +186,7 @@ body{
   margin-bottom: -5%;
   padding-bottom: 10%;
   padding-right: 5%;
-  background: linear-gradient(to bottom left, #E1E1E1 50%, #F1F1F1 50%);
+  background: linear-gradient(to bottom left, #E1E1E1 50%, #F1F1F1 50%) no-repeat center center fixed;
 }
 /* Autres boutons de la page*/
 Button{
