@@ -35,20 +35,11 @@
             <h2> 2.1.7.2. Exercice 2</h2>
             <div>
               <img src="../assets/moteur.png" style="height : 34%; width: 60%; margin-top: 0%; margin-left: 20%;"/>
-              <form>
-                  <label for="user">Que se passe-t-il si vous faites tourner un moteur plus vite que l’autre ?</label><br>
-                  <input type="textarea" id="fname" name="fname" placeholder="Inscrivez votre réponse ici" required class="textar"><br>
-                  <input type="submit" class="envoi" value="Envoyer la réponse"><br>
-                </form>
+              <h2>Que se passe-t-il si vous faites tourner un moteur plus vite que l’autre ?</h2>
+              <Editor v-model="value" editorStyle="height: 320px"/>
             </div>
             <Button style="background-color: #D3D3D3; border-color: #D3D3D3; color: #696969;" class="backtheorie">Revenir à la théorie</Button>
-            <h2> 2.1.7.2. Exercice 2</h2>
-            <div style="max-width:98%;">
-              <h3>Que se passe-t-il si vous faites tourner un moteur plus vite que l’autre ?</h3>
-              <Textarea v-model="value" :autoResize="true" rows="5" cols="80" placeholder="Inscrivez votre réponse ici"/>
-            </div>
-            <Button style="background-color: #D3D3D3; border-color: #D3D3D3; color: #696969;" class="backtheorie">Revenir à la théorie</Button>
-            <Button class="envoyer">Envoyer la réponse</Button>
+            <Button class="envoyer backtheorie">Envoyer la réponse</Button>
           </div>
         </div>
         <!-- fin de l'exercice -->

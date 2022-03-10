@@ -55,11 +55,11 @@
       <div style="margin-top: 0%; z-index: 1; float: none; width: 80%; height : 60%; font-size: 20px; text-align : left; margin-right : auto; margin-left: auto; font-size: 25px;">
         <h2>Vos Notes</h2>
         <div id="app">
-          <InputText type="text" class="p-inputtext-lg" v-model="name" placeholder="Vos notes" />
+          <Editor v-model="value" editorStyle="height: 320px"/>
         </div>  
       </div>
       <!-- création d'une div englobant les éléments de fin de page -->
-      <div class="findepage" style="margin-top: 0px; float: none">
+      <div class="findepage" style="margin-top: 5%; float: none">
         <div class="coche">
           <input type="checkbox" id="compris" name="J'ai compris le contenu de ce chapitre">
           <label for="compris">J'ai compris le contenu de ce chapitre</label>
@@ -164,6 +164,7 @@ body{
 .toutepage{
   animation:fadein 1s;
 }
+
 .coche:hover{
   font-size: 105%;
   transition-duration: .5s;

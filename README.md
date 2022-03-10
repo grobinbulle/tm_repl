@@ -18,5 +18,7 @@ npm run build
 yarn add primevue primeicons vue-router
 ```
 ```
+yarn add quill --save
+
 yarn install 
 ```
