@@ -1,5 +1,5 @@
 <template>
-  <Resume/>
+  <index/>
 </template>
 
 <script setup>

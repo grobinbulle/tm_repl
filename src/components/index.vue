@@ -55,6 +55,7 @@ body{
   font-size: 120%;
   vertical-align: middle;
   animation: fadein 2s;
+  font-family : system-ui;
 }
 .toutepage{
   padding-bottom: 10.5%;
