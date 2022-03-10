@@ -53,7 +53,7 @@
         </div>
       </div>
       <div style="margin-top: 0%; z-index: 1; float: none; width: 80%; height : 60%; font-size: 20px; text-align : left; margin-right : auto; margin-left: auto; font-size: 25px;">
-        <h2>Vos Notes</h2>
+        <h2>Vos notes</h2>
         <div id="app">
           <Editor v-model="value" editorStyle="height: 320px"/>
         </div>  

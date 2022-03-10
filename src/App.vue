@@ -1,5 +1,5 @@
 <template>
-  <Exercice/>
+  <CoursePage/>
 </template>
 
 <script setup>
