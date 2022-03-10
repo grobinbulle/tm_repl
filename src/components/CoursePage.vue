@@ -38,11 +38,11 @@
         </Sidebar>
         <div class="contenu">  
                   <!-- ajout du contenu textuel de notre cour -->
-          <div class="text" style="margin-top: 0%; z-index: 1; float: none; width: 80%; height : 60%; font-size: 20px; text-align : left; margin-right : auto; margin-left: auto; font-size: 25px;">                 
+          <div class="text" style="margin-top: 0%; z-index: 1; float: none; width: 80%; height : 60%; font-size: 20px; text-align : left; margin-right : auto; margin-left: auto; font-size: 150%; font-family : system-ui">                 
                             <h3>2.1.1. Introduction </h3>
-      Les robots sont des appareils mécaniques contrôlés par ordinateur, capables d’effectuer des tâches automatisées de manière autonome. Cela fait bien longtemps qu’ils jouent un rôle important dans l’industrie, dans la technologie, dans la médecine, dans la recherche et dans les sciences, à savoir dans pratiquement tous les domaines de l’activités humaines. Alors que les premiers robots étaient conçus pour assister les humains dans les tâches monotones et pénibles physiquement, les robots de nouvelle génération sont capables de collecter des données sur leur environnement à l’aide de capteurs, de prendre des décisions pertinentes ou d’adapter leur comportement en fonction de leur environnement (auto-apprentissage). On parle alors de robots auto-apprenants (self-learning robot en anglais).
+      <h5>Les robots sont des appareils mécaniques contrôlés par ordinateur, capables d’effectuer des tâches automatisées de manière autonome.<br> Cela fait bien longtemps qu’ils jouent un rôle important dans l’industrie, dans la technologie, dans la médecine, dans la recherche et dans les sciences, à savoir dans pratiquement tous les domaines de l’activités humaines.<br> Alors que les premiers robots étaient conçus pour assister les humains dans les tâches monotones et pénibles physiquement, les robots de nouvelle génération sont capables de collecter des données sur leur environnement à l’aide de capteurs, de prendre des décisions pertinentes ou d’adapter leur comportement en fonction de leur environnement (auto-apprentissage). On parle alors de robots auto-apprenants (self-learning robot en anglais).
     
-      Il existe différents types de robots : les robots industriels fixes, les robots mobiles ou les robots humanoïdes. Mais il y a une chose que tous les robots ont en commun : ils doivent tous être programmés. Il faut des humains pour décrire de manière très précise la tâche qu’un robot doit effectuer à l’aide d’une suite d’instructions, à savoir d’un programme informatique.
+      <br>Il existe différents types de robots : les robots industriels fixes, les robots mobiles ou les robots humanoïdes. Mais il y a une chose que tous les robots ont en commun : ils doivent tous être programmés. Il faut des humains pour décrire de manière très précise la tâche qu’un robot doit effectuer à l’aide d’une suite d’instructions, à savoir d’un programme informatique.</h5>
       <br>    
           </div>
           <div class="visuel">
@@ -164,7 +164,9 @@ body{
 .toutepage{
   animation:fadein 1s;
 }
-
+h2{
+  font-family : system-ui;
+}
 .coche:hover{
   font-size: 105%;
   transition-duration: .5s;
@@ -216,7 +218,7 @@ navbuttton{
   align-items: center;
   justify-content: space-between;
   margin-left: 15%;
-  margin-top: 3%;
+  margin-top: -3%;
   max-width: 80%;
 }
 .but-menubar{

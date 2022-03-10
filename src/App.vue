@@ -1,5 +1,5 @@
 <template>
-  <CoursePage/>
+  <Resume/>
 </template>
 
 <script setup>

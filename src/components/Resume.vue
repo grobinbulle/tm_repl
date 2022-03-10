@@ -89,6 +89,7 @@ body{
 p{
   font-size: 130%;
   text-align: left;
+  font-family : system-ui;
 }
 @keyframes fadein {
     from {
@@ -113,6 +114,9 @@ Button{
 }
 .user-but{
   margin-bottom: -18%;
+}
+h1{
+  font-family : system-ui;
 }
 
 </style>
