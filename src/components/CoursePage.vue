@@ -60,10 +60,7 @@
       </div>
       <!-- création d'une div englobant les éléments de fin de page -->
       <div class="findepage" style="margin-top: 5%; float: none">
-        <div class="coche">
-          <input type="checkbox" id="compris" name="J'ai compris le contenu de ce chapitre">
-          <label for="compris">J'ai compris le contenu de ce chapitre</label>
-        </div>
+        <ToggleButton v-model="checked" onLabel="J'ai compris le contenu de ce chapitre" offLabel="Cliquez pour valider ce chapitre" onIcon="pi pi-check" offIcon="pi pi-times" id="valider" />
         <Button class="p-button-raised" id="exercice" style="position: center; min-height: 100%;">Vers les exercices</Button>
       </div>
     </div>
@@ -77,6 +74,7 @@ export default {
   data() {
     return {
       visibleLeft: true,
+      checked: false,
       items: [
                 {
                     label: 'Chapitre 1',
@@ -145,9 +143,9 @@ export default {
     }  
 }
 body{
-  height: 103%;
+  height: 104%;
   margin-left: -1%;
-  margin-right: -2%;
+  margin-right: -3%;
   margin-top: 0%;
   margin-bottom: -5%;
   padding-bottom: 4%;
@@ -182,10 +180,13 @@ figcaption{
   display: inline-block;
   font-size: 120%;
 }
+#valider{
+  font-size: 120%;
+  display: inline-block;
+  margin-bottom: 0.3%;
+}
 #exercice:hover{
   background-color: orange;
-  height: 105%;
-  width: 105%;
   transition-duration: .5s;
 }
 
@@ -227,8 +228,6 @@ navbuttton{
   height: 7vh;
   align-items: center;
 }
-
-
 h1{
   font-size: 40px;
   background-color: #5c7fd4;
@@ -255,11 +254,9 @@ a {
   color : grey;
 }
 .findepage{
-  display: grid;
-  grid-template-columns: 40% 30% 30%;
-  align-items: center;
+  align-items:center;
   justify-content: space-between;
-  margin-left: 20%;
+  margin-left: 0%;
   margin-top: 10%;
 }
 label {
