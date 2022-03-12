@@ -11,7 +11,6 @@ import Sidebar from 'primevue/sidebar';
 import PanelMenu from 'primevue/panelmenu';
 import ScrollPanel from 'primevue/scrollpanel';
 import ProgressBar from 'primevue/progressbar';
-import VueRouter from 'vue-router';
 import InputText from 'primevue/inputtext';
 import Textarea from 'primevue/textarea';
 import Card from 'primevue/card';

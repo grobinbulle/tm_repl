@@ -9,7 +9,6 @@
   import login from './components/login.vue'
   import Exercice from './components/Exercice.vue'
   import ListCourses from './components/ListCourses.vue'
-  import Router from 'vue-router' 
   import Resume from './components/Resume.vue'
 </script>
 
