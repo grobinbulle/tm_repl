@@ -4,7 +4,7 @@
 
 <script setup>
   import CoursePage from './components/CoursePage.vue'
-  import index from './components/index.vue'
+  import Index from './components/Index.vue'
   import signup from './components/signup.vue'
   import login from './components/login.vue'
   import Exercice from './components/Exercice.vue'
