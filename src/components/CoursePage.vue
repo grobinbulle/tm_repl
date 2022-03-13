@@ -22,6 +22,8 @@
         <!-- élément à doite du menu -->
         <template #end>
           <Button icon="pi pi-user" class="p-button-rounded p-button-info user-but" />
+          <router-link to="/">Index</router-link>
+          <router-view></router-view>
         </template>
       </Menubar>
     </div>

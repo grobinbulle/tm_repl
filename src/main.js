@@ -17,6 +17,7 @@ import Card from 'primevue/card';
 import Checkbox from 'primevue/checkbox';
 import Editor from 'primevue/editor';
 import ToggleButton from 'primevue/togglebutton';
+import VueRouter from 'vue-router';
 import CoursePage from './components/CoursePage.vue'
 import Index from './components/Index.vue'
 import signup from './components/signup.vue'
@@ -46,3 +47,6 @@ app.component('Card', Card);
 app.component('Checkbox', Checkbox);
 
 app.mount('#app');
+
+Vue.use(VueRouter)
+
