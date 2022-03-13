@@ -17,6 +17,13 @@ import Card from 'primevue/card';
 import Checkbox from 'primevue/checkbox';
 import Editor from 'primevue/editor';
 import ToggleButton from 'primevue/togglebutton';
+import CoursePage from './components/CoursePage.vue'
+import Index from './components/Index.vue'
+import signup from './components/signup.vue'
+import login from './components/login.vue'
+import Exercice from './components/Exercice.vue'
+import ListCourses from './components/ListCourses.vue'
+import Resume from './components/Resume.vue'
 
 
 import 'primevue/resources/themes/saga-blue/theme.css';
