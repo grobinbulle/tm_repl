@@ -1,5 +1,5 @@
 <template>
-  <CoursePage/>
+  <TableMatiere/>
 </template>
 
 <script setup>
@@ -10,6 +10,7 @@
   import Exercice from './components/Exercice.vue'
   import ListCourses from './components/ListCourses.vue'
   import Resume from './components/Resume.vue'
+  import TableMatiere from './components/TableMatiere.vue'
 </script>
 
 <style>
