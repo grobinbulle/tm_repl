@@ -29,7 +29,8 @@
             <h3 style="color: #5c7fd4; text-align: left; width:80%;   font-size: 150%;"> 21Learning est la toute nouvelle plateforme du cours d'informatique au Collège du Sud. Elle présente un design retravaillé visant un apprentissage de meilleure qualité.</h3>
           </div>
           <div>
-            <Button class="boutons" style="background-color: white; color: #5c7fd4; margin: 0.15em; width: 15%; height: 30%; margin-left: 0.5%; margin-right: 0.5%;">S'inscrire</Button>
+            <router-link to="/signup">signup</router-link>
+            <Button class="boutons" style="background-color: white; color: #5c7fd4; margin: 0.15em; width: 15%; height: 30%; margin-left: 0.5%; margin-right: 0.5%;" v-on:click="">S'inscrire</Button>
             <Button class="boutons" style="background-color: #5c7fd4; border-color: #5c7fd4;margin: 0.15em; width: 15%; height: 30%; margin-left: 0.5%; margin-right: 0.5%;">Se connecter</Button>
           </div>
         </div>
@@ -39,11 +40,12 @@
 </template>
 const router = VueRouter.createRouter({
 history: VueRouter.createWebHistory(),
-routes: [
+const routes = [
     {
     path: '/signup',
     name: 'signup',
-    component: signup
+    component: signup,
+    props: true,
     },
   ]
 })
