@@ -6,7 +6,9 @@
       <meta name="description" content="Bienvenue sur la nouvelle plateforme d'apprentissage du cours d'informatique.">
       <meta name="keywords" content="informatique, apprentissage, plateforme, collège du sud">
       import signup from '/signup.vue'
-      import VueRouter from 'vue-router'; 
+      import VueRouter from 'vue-router';
+      import * as VueRouter from 'vue-router'
+      import App from './App.vue' 
     </head>
     <body>
       <Menubar :model="item" style="margin-top: -55px; width: 102%; position: fixed; z-index: 4; margin-left : -2%; margin-right: -5%;">
