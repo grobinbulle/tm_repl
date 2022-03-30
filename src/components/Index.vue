@@ -5,10 +5,11 @@
       <meta charset="UTF-8">
       <meta name="description" content="Bienvenue sur la nouvelle plateforme d'apprentissage du cours d'informatique.">
       <meta name="keywords" content="informatique, apprentissage, plateforme, collège du sud">
-      import signup from '/signup.vue'
+      import signup from 'signup.vue'
       import VueRouter from 'vue-router';
       import * as VueRouter from 'vue-router'
-      import App from './App.vue' 
+      import App from './App.vue'
+      Vue.use(Router) 
     </head>
     <body>
       <Menubar :model="item" style="margin-top: -55px; width: 102%; position: fixed; z-index: 4; margin-left : -2%; margin-right: -5%;">
@@ -40,14 +41,12 @@
     </body>
   </html>
 </template>
-const router = VueRouter.createRouter({
-history: VueRouter.createWebHistory(),
-const routes = [
+export default new Router({
+  routes: [
     {
-    path: '/signup',
-    name: 'signup',
-    component: signup,
-    props: true,
+        path: '/signup',
+        name: 'signup',
+        component: signup
     },
   ]
 })
