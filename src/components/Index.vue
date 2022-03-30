@@ -8,7 +8,6 @@
       import signup from 'signup.vue'
       import VueRouter from 'vue-router';
       import * as VueRouter from 'vue-router'
-      import App from './App.vue'
       Vue.use(Router) 
     </head>
     <body>

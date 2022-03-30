@@ -1063,7 +1063,7 @@ vite-plugin-pages@^0.21.3:
 
 vite-plugin-vue-layouts@^0.6.0:
   version "0.6.0"
-  resolved "https://registry.npmjs.org/vite-plugin-vue-layouts/-/vite-plugin-vue-layouts-0.6.0.tgz"
+  resolved "https://registry.yarnpkg.com/vite-plugin-vue-layouts/-/vite-plugin-vue-layouts-0.6.0.tgz#64ef67589b1ae0066d637aad706a4320c324f8d0"
   integrity sha512-7QX7o/NpCfs+hyXphwYfmPqAEQ6qd4uXsvI0VsovjGT2eCoEE5dMdP6L+uqqNWY4uqv7oCvtinecZmbzZv/9Rg==
   dependencies:
     "@vue/compiler-sfc" "^3.2.4"

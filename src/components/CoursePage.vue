@@ -1,7 +1,6 @@
 <template>
   <!-- création du head -->
   <head>
-    import * from './javascript/CoursePage.js'
     <title>Page de cours</title>
     <meta charset="UTF-8">
     <meta name="description" content="Bienvenue sur la nouvelle plateforme d'apprentissage du cours d'informatique.">
