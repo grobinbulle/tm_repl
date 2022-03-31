@@ -1,51 +1,43 @@
 <template>
-  <html>
-    <head>
-      <title>Exercice</title>
-      <meta charset="UTF-8">
-      <meta name="description" content="Bienvenue sur la nouvelle plateforme d'apprentissage du cours d'informatique.">
-      <meta name="keywords" content="informatique, apprentissage, plateforme, collège du sud">
-    </head>
-    <body>
-      <div class="page" :class="{'page-shift': visibleLeft, 'page-normal': !visibleLeft}" style="height: 100%;">
-        <div class="menubar-css">
-          <!-- création du menu-haut -->
-          <Menubar :model="item" style="margin-top: -65px; width: 102%; position: fixed; z-index: 4; margin-left : 0.5%; margin-right: -14%; max-height: 65px;">
-            <!-- éléments à gauche du menu -->
-            <template #start> 
-              <Button class="but-menubar">Retour à la page d'accueil</Button>
-              <Button icon="pi pi-arrow-right" @click="visibleLeft = true" class="p-mr-2 arrow-but"/>
-            </template>
-            <!-- élément à doite du menu -->
-            <template #end>
-              <Button icon="pi pi-user" class="p-button-rounded p-button-info" />
-            </template>
-          </Menubar>
-        </div>
-          <!-- fin du menu-haut -->
-          <!-- appel de la sidebar -->
-        <div class="toutepage">
-        <Sidebar v-model:visible="visibleLeft" :modal="false" :autoZIndex="true">
-          <p>Naviguer dans ce chapitre</p>
-          <PanelMenu :model="items" />
-        </Sidebar>
-            <h1 style="">Exercices</h1>
-          <!-- début de l'exercice -->
-          <div class="content" style="max-width: 70%">
-            <h2> Nom de l'exercice</h2>
-            <div>
-              <img src="../assets/moteur.png" style="height : 34%; width: 60%; margin-top: 0%; margin-left: 20%;"/>
-              <h2>Question</h2>
-              <Editor v-model="value" editorStyle="height: 320px"/>
-            </div>
-            <Button style="background-color: #D3D3D3; border-color: #D3D3D3; color: #696969;" class="backtheorie">Revenir à la théorie</Button>
-            <Button class="envoyer backtheorie">Envoyer la réponse</Button>
-          </div>
-        </div>
-        <!-- fin de l'exercice -->
+  <div class="allpage">
+    <div class="page" :class="{'page-shift': visibleLeft, 'page-normal': !visibleLeft}" style="height: 100%;">
+      <div class="menubar-css">
+        <!-- création du menu-haut -->
+        <Menubar :model="item" style="margin-top: -65px; width: 102%; position: fixed; z-index: 4; margin-left : 0.5%; margin-right: -14%; max-height: 65px;">
+          <!-- éléments à gauche du menu -->
+          <template #start> 
+            <Button class="but-menubar">Retour à la page d'accueil</Button>
+            <Button icon="pi pi-arrow-right" @click="visibleLeft = true" class="p-mr-2 arrow-but"/>
+          </template>
+          <!-- élément à doite du menu -->
+          <template #end>
+            <Button icon="pi pi-user" class="p-button-rounded p-button-info" />
+          </template>
+        </Menubar>
       </div>
-    </body>
-  </html>
+        <!-- fin du menu-haut -->
+        <!-- appel de la sidebar -->
+      <div class="toutepage">
+      <Sidebar v-model:visible="visibleLeft" :modal="false" :autoZIndex="true">
+        <p>Naviguer dans ce chapitre</p>
+        <PanelMenu :model="items" />
+      </Sidebar>
+          <h1 style="">Exercices</h1>
+        <!-- début de l'exercice -->
+        <div class="content" style="max-width: 70%">
+          <h2> Nom de l'exercice</h2>
+          <div>
+            <img src="../assets/moteur.png" style="height : 34%; width: 60%; margin-top: 0%; margin-left: 20%;"/>
+            <h2>Question</h2>
+            <Editor v-model="value" editorStyle="height: 320px"/>
+          </div>
+          <Button style="background-color: #D3D3D3; border-color: #D3D3D3; color: #696969;" class="backtheorie">Revenir à la théorie</Button>
+          <Button class="envoyer backtheorie">Envoyer la réponse</Button>
+        </div>
+      </div>
+      <!-- fin de l'exercice -->
+    </div>
+  </div>
 </template>
 
 <script>
@@ -150,7 +142,7 @@ label{
 .textar{
   height: 10vh;
 }
-body{
+.allpage{
   width: 105%;
   height: 105%;
   margin-left: -2%;

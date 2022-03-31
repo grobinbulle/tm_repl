@@ -1,39 +1,31 @@
 <template>
-  <html>
-    <head>
-      <title>Résumé</title>
-      <meta charset="UTF-8">
-      <meta name="description" content="Bienvenue sur la nouvelle plateforme d'apprentissage du cours d'informatique.">
-      <meta name="keywords" content="informatique, apprentissage, plateforme, collège du sud">
-    </head>
-    <body>
-      <div class="menubar-css">
-        <!-- création du menu-haut -->
-        <Menubar :model="item" style="margin-top: -60px; width: 101.3%; position: fixed; z-index: 4; margin-left : 0%; margin-right: -11%; max-height: 65px;">
-          <!-- éléments à gauche du menu -->
-          <template #start> 
-            <Button class="but-menubar">Retour à la page d'accueil</Button>
-          </template>
-          <!-- élément à doite du menu -->
-          <template>
-          </template>
-          <template #end>
-            <div class="but-menubar">
-              <Button icon="pi pi-user" class="p-button-rounded p-button-info user-but" />
-            </div>
-          </template>
-        </Menubar>
+  <div class="allpage">
+    <div class="menubar-css">
+      <!-- création du menu-haut -->
+      <Menubar :model="item" style="margin-top: -60px; width: 101.3%; position: fixed; z-index: 4; margin-left : 0%; margin-right: -11%; max-height: 65px;">
+        <!-- éléments à gauche du menu -->
+        <template #start> 
+          <Button class="but-menubar">Retour à la page d'accueil</Button>
+        </template>
+        <!-- élément à doite du menu -->
+        <template>
+        </template>
+        <template #end>
+          <div class="but-menubar">
+            <Button icon="pi pi-user" class="p-button-rounded p-button-info user-but" />
+          </div>
+        </template>
+      </Menubar>
+    </div>
+    <!-- contenu autre que le menu-haut -->
+    <div class="toutepage">
+      <div class="content">
+        <h1>Résumé</h1>
+        <p>Content</p>
       </div>
-      <!-- contenu autre que le menu-haut -->
-      <div class="toutepage">
-        <div class="content">
-          <h1>Résumé</h1>
-          <p>Content</p>
-        </div>
-        <Button>Passer au prochain chapitre</Button>
-      </div>
-    </body>
-  </html>
+      <Button>Passer au prochain chapitre</Button>
+    </div>
+  </div>
 </template>
 
 <style scoped>
@@ -47,7 +39,7 @@
         opacity:1;
     }
 }
-body{
+.allpage{
   width: 103%;
   height: 103%;
   margin-left: -1.5%;
