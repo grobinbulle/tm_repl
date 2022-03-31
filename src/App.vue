@@ -1,5 +1,5 @@
 <template>
-  <TableMatiere/>
+  <Index/>
 </template>
 
 <script setup>

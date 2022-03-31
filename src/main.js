@@ -47,6 +47,3 @@ app.component('Card', Card);
 app.component('Checkbox', Checkbox);
 
 app.mount('#app');
-
-App.use(router)
-
