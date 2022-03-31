@@ -1,4 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
+
+
 import CoursePage from '../components/CoursePage.vue'
 import Index from '/src/components/Index.vue'
 import signup from '/src/components/signup.vue'

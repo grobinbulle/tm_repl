@@ -4,6 +4,8 @@ import PrimeVue from 'primevue/config';
 const app = createApp(App);
 app.use(PrimeVue);
 
+import router from './router/index';
+
 import Button from 'primevue/button';
 import Menubar from 'primevue/menubar';
 import Password from 'primevue/password';
@@ -31,7 +33,9 @@ import 'primevue/resources/themes/saga-blue/theme.css';
 import 'primevue/resources/primevue.min.css';
 import 'primeicons/primeicons.css';          
 
+app.use(router)
 app.use(PrimeVue);
+
 app.component('ToggleButton', ToggleButton)
 app.component('Editor', Editor)
 app.component('Button', Button);
