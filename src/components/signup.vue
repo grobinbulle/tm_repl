@@ -43,6 +43,7 @@
           <label for="password">Confirmez le mot de passe</label><br>
           <input type="password" id="password" name="password" minlength="8" required><br>
           <input type="submit" class="envoi" value="S'inscrire"><br>
+          <router-link :to="'/ListCourses'">ListCourses</router-link>
         </form>
       </div>
     </div>
