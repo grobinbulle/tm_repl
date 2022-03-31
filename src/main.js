@@ -48,5 +48,5 @@ app.component('Checkbox', Checkbox);
 
 app.mount('#app');
 
-Vue.use(VueRouter)
+App.use(router)
 
