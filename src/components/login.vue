@@ -1,13 +1,6 @@
 <template>
   <html>
-    <head>
-      <title>Log in</title>
-      <meta charset="UTF-8">
-      <meta name="description" content="Bienvenue sur la nouvelle plateforme d'apprentissage du cours d'informatique.">
-      <meta name="keywords" content="informatique, apprentissage, plateforme, collège du sud">
-    </head>
-    <body>
-      
+    <body>     
       <div class="menubar-css">
         <!-- création du menu-haut -->
         <Menubar :model="item" style="margin-top: -65px; width: 102%; position: fixed; z-index: 4; margin-left : 0%; margin-right: -11%; max-height: 65px;">

@@ -4,11 +4,7 @@
       <title>Index</title>
       <meta charset="UTF-8">
       <meta name="description" content="Bienvenue sur la nouvelle plateforme d'apprentissage du cours d'informatique.">
-      <meta name="keywords" content="informatique, apprentissage, plateforme, collège du sud">
-      import signup from 'signup.vue'
-      import VueRouter from 'vue-router';
-      import * as VueRouter from 'vue-router'
-      Vue.use(Router) 
+      <meta name="keywords" content="informatique, apprentissage, plateforme, collège du sud"> 
     </head>
     <body>
       <Menubar :model="item" style="margin-top: -55px; width: 102%; position: fixed; z-index: 4; margin-left : -2%; margin-right: -5%;">
@@ -31,7 +27,6 @@
             <h3 style="color: #5c7fd4; text-align: left; width:80%;   font-size: 150%;"> 21Learning est la toute nouvelle plateforme du cours d'informatique au Collège du Sud. Elle présente un design retravaillé visant un apprentissage de meilleure qualité.</h3>
           </div>
           <div>
-            <router-link to="/signup">signup</router-link>
             <Button class="boutons" style="background-color: white; color: #5c7fd4; margin: 0.15em; width: 15%; height: 30%; margin-left: 0.5%; margin-right: 0.5%;" v-on:click="">S'inscrire</Button>
             <Button class="boutons" style="background-color: #5c7fd4; border-color: #5c7fd4;margin: 0.15em; width: 15%; height: 30%; margin-left: 0.5%; margin-right: 0.5%;">Se connecter</Button>
           </div>
@@ -40,15 +35,6 @@
     </body>
   </html>
 </template>
-export default new Router({
-  routes: [
-    {
-        path: '/signup',
-        name: 'signup',
-        component: signup
-    },
-  ]
-})
 <script>
     export default {
     }

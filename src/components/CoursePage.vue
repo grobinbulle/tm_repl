@@ -1,11 +1,4 @@
 <template>
-  <!-- création du head -->
-  <head>
-    <title>Page de cours</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Bienvenue sur la nouvelle plateforme d'apprentissage du cours d'informatique.">
-    <meta name="keywords" content="informatique, apprentissage, plateforme, collège du sud">
-  </head>
   <body>
     <!-- div englobant l'intégralité de la page -->
     <div class="page" :class="{'page-shift': visibleLeft, 'page-normal': !visibleLeft}" style="height: 100%;">
