@@ -1,29 +1,28 @@
 <template>
-  <html>
-    <body>
-      <div class="menubar-css">
-        <!-- création du menu-haut -->
-        <Menubar :model="item" style="margin-top: -60px; width: 101.3%; position: fixed; z-index: 4; margin-left : 0%; margin-right: -11%; max-height: 65px;">
-          <!-- éléments à gauche du menu -->
-          <template #start> 
-            <Button class="but-menubar">Retour à la page d'accueil</Button>
-          </template>
-          <!-- élément à doite du menu -->
-          <template>
-          </template>
-          <template #end>
-            <div class="but-menubar">
-              <Button icon="pi pi-user" class="p-button-rounded p-button-info user-but" />
-            </div>
-          </template>
-        </Menubar>
-      </div>
-      <!-- contenu autre que le menu-haut -->
-      <div class="toutepage">
-        <div class="content">
-          <h1>Résumé</h1>
-          <p>Nous avons vu que, dans ce chapitre, bla bla bla bla bla bla
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, 
+  <div class="allpage">
+    <div class="menubar-css">
+      <!-- création du menu-haut -->
+      <Menubar :model="item" style="margin-top: -60px; width: 101.3%; position: fixed; z-index: 4; margin-left : 0%; margin-right: -11%; max-height: 65px;">
+        <!-- éléments à gauche du menu -->
+        <template #start> 
+          <Button class="but-menubar">Retour à la page d'accueil</Button>
+        </template>
+        <!-- élément à doite du menu -->
+        <template>
+        </template>
+        <template #end>
+          <div class="but-menubar">
+            <Button icon="pi pi-user" class="p-button-rounded p-button-info user-but" />
+          </div>
+        </template>
+      </Menubar>
+    </div>
+    <!-- contenu autre que le menu-haut -->
+    <div class="toutepage">
+      <div class="content">
+        <h1>Résumé</h1>
+        <p>Nous avons vu que, dans ce chapitre, bla bla bla bla bla bla
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, 
 pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. 
 Donec scelerisque sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, 
 in pretium orci vestibulum eget. Class aptent taciti sociosqu ad litora torquent
@@ -34,12 +33,11 @@ faucibus libero, at maximus nisl suscipit posuere. Morbi nec enim nunc.
 Phasellus bibendum turpis ut ipsum egestas, sed sollicitudin elit convallis. 
 Cras pharetra mi tristique sapien vestibulum lobortis. Nam eget bibendum metus, 
 non dictum mauris. Nulla at tellus sagittis, viverra est a, bibendum metus.
-          </p>
-        </div>
-        <Button>Passer au prochain chapitre</Button>
+        </p>
       </div>
-    </body>
-  </html>
+      <Button>Passer au prochain chapitre</Button>
+    </div>
+  </div>
 </template>
 
 <style scoped>
@@ -53,7 +51,7 @@ non dictum mauris. Nulla at tellus sagittis, viverra est a, bibendum metus.
         opacity:1;
     }
 }
-body{
+.allpage{
   width: 103%;
   height: 103%;
   margin-left: -1.5%;

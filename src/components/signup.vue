@@ -1,61 +1,59 @@
 <template>
-  <html>
-    <body>
-      <div class="menubar-css">
-        <!-- création du menu-haut -->
-        <Menubar :model="item" style="margin-top: -65px; width: 101.3%; position: fixed; z-index: 4; margin-left : 0%; margin-right: -11%; max-height: 65px;">
-          <!-- éléments à gauche du menu -->
-          <template #start> 
-            <Button class="but-menubar">Retour à la page d'accueil</Button>
-          </template>
-          <!-- élément à doite du menu -->
-          <template #end>
-            <Button icon="pi pi-user" class="p-button-rounded p-button-info" />
-          </template>
-        </Menubar>
+  <div class="allpage">
+    <div class="menubar-css">
+      <!-- création du menu-haut -->
+      <Menubar :model="item" style="margin-top: -65px; width: 101.3%; position: fixed; z-index: 4; margin-left : 0%; margin-right: -11%; max-height: 65px;">
+        <!-- éléments à gauche du menu -->
+        <template #start> 
+          <Button class="but-menubar">Retour à la page d'accueil</Button>
+        </template>
+        <!-- élément à doite du menu -->
+        <template #end>
+          <Button icon="pi pi-user" class="p-button-rounded p-button-info" />
+        </template>
+      </Menubar>
+    </div>
+    <!-- contenu autre que le menu-haut -->
+    <div class="toutepage">
+      <div class="content">
+        <h1>S'inscrire</h1>
+        <form>
+          <label for="fname">Prénom</label><br>
+          <input type="text" id="fname" name="fname" required><br>
+          <label for="lname">Nom</label><br>
+          <input type="text" id="lname" name="lname" required><br>
+          <label for="email">E-mail</label><br>
+          <input type="email" id="email" name="email" placeholder="prenom.nom@studentfr.ch" required><br>        
+          <label for="classe">Classe</label><br>
+          <select name="classe" class="choix" id="classe" required>
+              <option value="">--Choisissez votre classe--</option>
+              <option value="1ECG">1ère ECG</option>
+              <option value="2ECG">2ème ECG</option>
+              <option value="3ECG">3ème ECG</option>
+              <option value="1EC">1ère EC</option>
+              <option value="2EC">2ème EC</option>
+              <option value="3EC">3ème EC</option>
+              <option value="1GY">1ère GY</option>
+              <option value="2GY">2ème GY</option>
+              <option value="3GY">3ème GY</option>
+              <option value="4GY">4ème GY</option>
+          </select><br>
+          <label for="password">Mot de passe</label><br>
+          <input type="password" id="password" name="password" minlength="8" required><br>
+          <label for="password">Confirmez le mot de passe</label><br>
+          <input type="password" id="password" name="password" minlength="8" required><br>
+          <input type="submit" class="envoi" value="S'inscrire"><br>
+        </form>
       </div>
-      <!-- contenu autre que le menu-haut -->
-      <div class="toutepage">
-        <div class="content">
-          <h1>S'inscrire</h1>
-          <form>
-            <label for="fname">Prénom</label><br>
-            <input type="text" id="fname" name="fname" required><br>
-            <label for="lname">Nom</label><br>
-            <input type="text" id="lname" name="lname" required><br>
-            <label for="email">E-mail</label><br>
-            <input type="email" id="email" name="email" placeholder="prenom.nom@studentfr.ch" required><br>        
-            <label for="classe">Classe</label><br>
-            <select name="classe" class="choix" id="classe" required>
-                <option value="">--Choisissez votre classe--</option>
-                <option value="1ECG">1ère ECG</option>
-                <option value="2ECG">2ème ECG</option>
-                <option value="3ECG">3ème ECG</option>
-                <option value="1EC">1ère EC</option>
-                <option value="2EC">2ème EC</option>
-                <option value="3EC">3ème EC</option>
-                <option value="1GY">1ère GY</option>
-                <option value="2GY">2ème GY</option>
-                <option value="3GY">3ème GY</option>
-                <option value="4GY">4ème GY</option>
-            </select><br>
-            <label for="password">Mot de passe</label><br>
-            <input type="password" id="password" name="password" minlength="8" required><br>
-            <label for="password">Confirmez le mot de passe</label><br>
-            <input type="password" id="password" name="password" minlength="8" required><br>
-            <input type="submit" class="envoi" value="S'inscrire"><br>
-          </form>
-        </div>
-      </div>
-    </body>
-  </html>
+    </div>
+  </div>
 </template>
 
 <style scoped>
   export default {
 }
 
-body{
+.allpage{
   width: 103%;
   height: 110%;
   margin-left: -1.5%;

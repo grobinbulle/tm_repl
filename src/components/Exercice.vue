@@ -1,6 +1,5 @@
 <template>
-  <html>
-    <body>
+    <div class="allpage">
       <div class="page" :class="{'page-shift': visibleLeft, 'page-normal': !visibleLeft}" style="height: 100%;">
         <div class="menubar-css">
           <!-- création du menu-haut -->
@@ -38,8 +37,7 @@
         </div>
         <!-- fin de l'exercice -->
       </div>
-    </body>
-  </html>
+    </div>
 </template>
 
 <script>
@@ -144,7 +142,7 @@ label{
 .textar{
   height: 10vh;
 }
-body{
+.allpage{
   width: 105%;
   height: 105%;
   margin-left: -2%;

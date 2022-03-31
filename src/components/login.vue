@@ -1,40 +1,38 @@
 <template>
-  <html>
-    <body>     
-      <div class="menubar-css">
-        <!-- création du menu-haut -->
-        <Menubar :model="item" style="margin-top: -65px; width: 102%; position: fixed; z-index: 4; margin-left : 0%; margin-right: -11%; max-height: 65px;">
-          <!-- éléments à gauche du menu -->
-          <template #start> 
-            <Button class="but-menubar">Retour à la page d'accueil</Button>
-          </template>
-          <!-- élément à doite du menu -->
-          <template #end>
-            <Button icon="pi pi-user" class="p-button-rounded p-button-info" />
-          </template>
-        </Menubar>
+  <div class="allpage">   
+    <div class="menubar-css">
+      <!-- création du menu-haut -->
+      <Menubar :model="item" style="margin-top: -65px; width: 102%; position: fixed; z-index: 4; margin-left : 0%; margin-right: -11%; max-height: 65px;">
+        <!-- éléments à gauche du menu -->
+        <template #start> 
+          <Button class="but-menubar">Retour à la page d'accueil</Button>
+        </template>
+        <!-- élément à doite du menu -->
+        <template #end>
+          <Button icon="pi pi-user" class="p-button-rounded p-button-info" />
+        </template>
+      </Menubar>
+    </div>
+    
+    <div class="toutepage">
+      <div class="content">
+        <h1>Se connecter</h1>
+        <form>
+          <label for="user">Nom d'utilisateur</label><br>
+          <input type="text" id="fname" name="fname" required><br>
+          <label for="password">Mot de passe</label><br>
+          <input type="password" id="password" name="password" minlength="8" required><br>
+          <input type="submit" class="envoi" value="Se connecter"><br>
+        </form>
       </div>
-      
-      <div class="toutepage">
-        <div class="content">
-          <h1>Se connecter</h1>
-          <form>
-            <label for="user">Nom d'utilisateur</label><br>
-            <input type="text" id="fname" name="fname" required><br>
-            <label for="password">Mot de passe</label><br>
-            <input type="password" id="password" name="password" minlength="8" required><br>
-            <input type="submit" class="envoi" value="Se connecter"><br>
-          </form>
-        </div>
-      </div>
-    </body>
-  </html>
+    </div>
+  </div>
 </template>
 
 <style scoped>
   export default {
 }
-body{
+.allpage{
   height: 110%;
   width: 104%;
   margin-left: -2%;

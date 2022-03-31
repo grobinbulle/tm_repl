@@ -1,78 +1,76 @@
 <template>
-  <html>
-    <body>
-      <div class="menubar-css">
-        <!-- création du menu-haut -->
-        <Menubar :model="item" style="margin-top: -65px; width: 101.3%; position: fixed; z-index: 4; margin-left : 0%; margin-right: -11%; max-height: 65px;">
-          <!-- éléments à gauche du menu -->
-          <template #start> 
-            <Button class="but-menubar">Retour à la page d'accueil</Button>
-          </template>
-          <!-- élément à doite du menu -->
-          <template #end>
-            <Button icon="pi pi-user" class="p-button-rounded p-button-info" />
-          </template>
-        </Menubar>
-      </div>
-      <div class="toutepage">
-        <div class="content" style ="margin-top : 50px; width: 105%;">
-          <h1>Choisissez votre cours</h1>
-          <div class="toutecarte"> 
-            <Card class="carte" id="c1">
-              <template #header>
-              </template>
-              <template #title>
-                  2.1 : Le monde des robots
-              </template>
-              <template #footer>
-                <Button class="Bouton">Aller au cours</Button>
-              </template>
-            </Card>
-            <Card class="carte" id="c2">
-              <template #header>
-              </template>
-              <template #title>
-                  2.2 Mettre le robot en mouvement
-              </template>
-              <template #footer>
-                <Button class="Bouton">Aller au cours</Button>
-              </template>
-            </Card>
-            <Card class="carte" id="c3">
-              <template #header>
-              </template>
-              <template #title>
-                  2.3 Le robot réagit à son environnement
-              </template>
-              <template #footer>
-                <Button class="Bouton">Aller au cours</Button>
-              </template>
-            </Card>
-            <Card class="carte" id="c4">
-              <template #header>
-              </template>
-              <template #title>
-                  2.4 Le robot auto-apprenant
-              </template>
-              <template #footer>
-                <Button class="Bouton">Aller au cours</Button>
-              </template>
-            </Card>
-            <Card class="carte" id="c5">
-              <template #header>
-              </template>
-              <template #title>
-                  2.5 Référence des commandes du mbrobot
-              </template>
-              <template #footer>
-                <Button class="Bouton">Aller au cours</Button>
-              </template>
-            </Card>            
-          </div>
+  <div class="allpage">
+    <div class="menubar-css">
+      <!-- création du menu-haut -->
+      <Menubar :model="item" style="margin-top: -65px; width: 101.3%; position: fixed; z-index: 4; margin-left : 0%; margin-right: -11%; max-height: 65px;">
+        <!-- éléments à gauche du menu -->
+        <template #start> 
+          <Button class="but-menubar">Retour à la page d'accueil</Button>
+        </template>
+        <!-- élément à doite du menu -->
+        <template #end>
+          <Button icon="pi pi-user" class="p-button-rounded p-button-info" />
+        </template>
+      </Menubar>
+    </div>
+    <div class="toutepage">
+      <div class="content" style ="margin-top : 50px; width: 105%;">
+        <h1>Choisissez votre cours</h1>
+        <div class="toutecarte"> 
+          <Card class="carte" id="c1">
+            <template #header>
+            </template>
+            <template #title>
+                2.1 : Le monde des robots
+            </template>
+            <template #footer>
+              <Button class="Bouton">Aller au cours</Button>
+            </template>
+          </Card>
+          <Card class="carte" id="c2">
+            <template #header>
+            </template>
+            <template #title>
+                2.2 Mettre le robot en mouvement
+            </template>
+            <template #footer>
+              <Button class="Bouton">Aller au cours</Button>
+            </template>
+          </Card>
+          <Card class="carte" id="c3">
+            <template #header>
+            </template>
+            <template #title>
+                2.3 Le robot réagit à son environnement
+            </template>
+            <template #footer>
+              <Button class="Bouton">Aller au cours</Button>
+            </template>
+          </Card>
+          <Card class="carte" id="c4">
+            <template #header>
+            </template>
+            <template #title>
+                2.4 Le robot auto-apprenant
+            </template>
+            <template #footer>
+              <Button class="Bouton">Aller au cours</Button>
+            </template>
+          </Card>
+          <Card class="carte" id="c5">
+            <template #header>
+            </template>
+            <template #title>
+                2.5 Référence des commandes du mbrobot
+            </template>
+            <template #footer>
+              <Button class="Bouton">Aller au cours</Button>
+            </template>
+          </Card>            
         </div>
       </div>
-    </body>
-  </html>
+    </div>
+  </div>
 </template>
 
 <!-- éléments du PanelMenu -->
@@ -137,7 +135,7 @@ p {
 .user-but{
   margin-bottom: -18%;
 }
-body{
+.allpage{
   width: 105%;
   margin-left: -1.5%;
   margin-right: -1.5%;

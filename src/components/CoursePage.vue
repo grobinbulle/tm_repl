@@ -1,5 +1,5 @@
 <template>
-  <body>
+  <div class="allpage">
     <!-- div englobant l'intégralité de la page -->
     <div class="page" :class="{'page-shift': visibleLeft, 'page-normal': !visibleLeft}" style="height: 100%;">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,8 +14,6 @@
         <!-- élément à doite du menu -->
         <template #end>
           <Button icon="pi pi-user" class="p-button-rounded p-button-info user-but" />
-          <router-link to="/">Index</router-link>
-          <router-view></router-view>
         </template>
       </Menubar>
     </div>
@@ -59,7 +57,7 @@
       </div>
     </div>
     </div>
-  </body>
+  </div>
 </template>
 
 <script>
@@ -136,7 +134,7 @@ export default {
         }
     }  
 }
-body{
+.allpage{
   height: 104%;
   margin-left: -1%;
   margin-right: -3%;
