@@ -5,7 +5,7 @@
       </template>
       <template #end>
         <InputText placeholder="Search" type="text" />
-        <Button icon="pi pi-user" class="p-button-rounded p-button-info" />
+        <Button icon="pi pi-user" class="p-button-rounded p-button-info"/>
       </template>
     </Menubar>
     <div class="toutepage">
@@ -20,9 +20,8 @@
           <h3 style="color: #5c7fd4; text-align: left; width:80%;   font-size: 150%;"> 21Learning est la toute nouvelle plateforme du cours d'informatique au Collège du Sud. Elle présente un design retravaillé visant un apprentissage de meilleure qualité.</h3>
         </div>
         <div>
-          <router-link :to="'/signup'">signup</router-link>
-          <Button class="boutons" style="background-color: white; color: #5c7fd4; margin: 0.15em; width: 15%; height: 30%; margin-left: 0.5%; margin-right: 0.5%;" v-on:click="">S'inscrire</Button>
-          <Button class="boutons" style="background-color: #5c7fd4; border-color: #5c7fd4;margin: 0.15em; width: 15%; height: 30%; margin-left: 0.5%; margin-right: 0.5%;">Se connecter</Button>
+          <Button class="boutons" style="background-color: white; color: #5c7fd4; margin: 0.15em; width: 15%; height: 30%; margin-left: 0.5%; margin-right: 0.5%; color: white;" v-on:click=""><router-link :to="'/signup'">S'inscrire</router-link></Button>
+          <Button class="boutons" style="background-color: #5c7fd4; border-color: #5c7fd4;margin: 0.15em; width: 15%; height: 30%; margin-left: 0.5%; margin-right: 0.5%;"><router-link :to="'/login'">Se connecter</router-link></Button>
         </div>
       </div>
     </div>

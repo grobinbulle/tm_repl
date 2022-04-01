@@ -5,7 +5,7 @@
       <Menubar :model="item" style="margin-top: -60px; width: 101.3%; position: fixed; z-index: 4; margin-left : 0%; margin-right: -11%; max-height: 65px;">
         <!-- éléments à gauche du menu -->
         <template #start> 
-          <Button class="but-menubar">Retour à la page d'accueil</Button>
+          <Button class="but-menubar"><router-link :to="'/'">Retour à la page d'accueil</router-link></Button>
         </template>
         <!-- élément à doite du menu -->
         <template>

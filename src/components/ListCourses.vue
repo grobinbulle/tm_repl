@@ -5,7 +5,7 @@
       <Menubar :model="item" style="margin-top: -65px; width: 101.3%; position: fixed; z-index: 4; margin-left : 0%; margin-right: -11%; max-height: 65px;">
         <!-- éléments à gauche du menu -->
         <template #start> 
-          <Button class="but-menubar">Retour à la page d'accueil</Button>
+          <Button class="but-menubar"><router-link :to="'/'">Retour à la page d'accueil</router-link></Button>
         </template>
         <!-- élément à doite du menu -->
         <template #end>
@@ -28,7 +28,7 @@
                 quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
             </template>
             <template #footer>
-              <Button class="Bouton"><router-link :to="'/CoursePage'">Aller au cours</router-link></Button>
+              <Button class="Bouton"><router-link :to="'/TableMatiere'">Aller au cours</router-link></Button>
             </template>
           </Card>
           <Card class="carte" id="c2">
@@ -42,7 +42,7 @@
                 quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
             </template>
             <template #footer>
-              <Button class="Bouton"><router-link :to="'/CoursePage'">Aller au cours</router-link></Button>
+              <Button class="Bouton"><router-link :to="'/TableMatiere'">Aller au cours</router-link></Button>
             </template>
           </Card>
           <Card class="carte" id="c3">
@@ -56,7 +56,7 @@
                 quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
             </template>
             <template #footer>
-              <Button class="Bouton"><router-link :to="'/CoursePage'">Aller au cours</router-link></Button>
+              <Button class="Bouton"><router-link :to="'/TableMatiere'">Aller au cours</router-link></Button>
             </template>
           </Card>
           <Card class="carte" id="c4">
@@ -70,7 +70,7 @@
                 quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
             </template>
             <template #footer>
-              <Button class="Bouton"><router-link :to="'/CoursePage'">Aller au cours</router-link></Button>
+              <Button class="Bouton"><router-link :to="'/TableMatiere'">Aller au cours</router-link></Button>
             </template>
           </Card>
           <Card class="carte" id="c5">
@@ -84,7 +84,7 @@
                 quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
             </template>
             <template #footer>
-              <Button class="Bouton"><router-link :to="'/CoursePage'">Aller au cours</router-link></Button>
+              <Button class="Bouton"><router-link :to="'/Tablematiere'">Aller au cours</router-link></Button>
             </template>
           </Card>
           <Card class="carte" id="c6">
@@ -98,7 +98,7 @@
                 quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
             </template>
             <template #footer>
-              <Button class="Bouton"><router-link :to="'/CoursePage'">Aller au cours</router-link></Button>
+              <Button class="Bouton"><router-link :to="'/TableMatiere'">Aller au cours</router-link></Button>
             </template>
           </Card>
         </div>

@@ -5,7 +5,7 @@
       <Menubar :model="item" style="margin-top: -65px; width: 101.3%; position: fixed; z-index: 4; margin-left : 0%; margin-right: -11%; max-height: 65px;">
         <!-- éléments à gauche du menu -->
         <template #start> 
-          <Button class="but-menubar">Retour à la page d'accueil</Button>
+          <Button class="but-menubar"><router-link :to="'/'">Retour à la page d'accueil</router-link></Button>
         </template>
         <!-- élément à doite du menu -->
         <template #end>
@@ -24,7 +24,7 @@
                 2.1 : Le monde des robots
             </template>
             <template #footer>
-              <Button class="Bouton">Aller au cours</Button>
+              <Button class="Bouton"><router-link :to="'/CoursePage'">Aller au cours</router-link></Button>
             </template>
           </Card>
           <Card class="carte" id="c2">
@@ -34,7 +34,7 @@
                 2.2 Mettre le robot en mouvement
             </template>
             <template #footer>
-              <Button class="Bouton">Aller au cours</Button>
+              <Button class="Bouton"><router-link :to="'/CoursePage'">Aller au cours</router-link></Button>
             </template>
           </Card>
           <Card class="carte" id="c3">
@@ -44,7 +44,7 @@
                 2.3 Le robot réagit à son environnement
             </template>
             <template #footer>
-              <Button class="Bouton">Aller au cours</Button>
+              <Button class="Bouton"><router-link :to="'/CoursePage'">Aller au cours</router-link></Button>
             </template>
           </Card>
           <Card class="carte" id="c4">
@@ -54,7 +54,7 @@
                 2.4 Le robot auto-apprenant
             </template>
             <template #footer>
-              <Button class="Bouton">Aller au cours</Button>
+              <Button class="Bouton"><router-link :to="'/CoursePage'">Aller au cours</router-link></Button>
             </template>
           </Card>
           <Card class="carte" id="c5">
@@ -64,7 +64,7 @@
                 2.5 Référence des commandes du mbrobot
             </template>
             <template #footer>
-              <Button class="Bouton">Aller au cours</Button>
+              <Button class="Bouton"><router-link :to="'/CoursePage'">Aller au cours</router-link></Button>
             </template>
           </Card>            
         </div>
