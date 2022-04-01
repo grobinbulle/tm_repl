@@ -23,6 +23,7 @@
           <label for="password">Mot de passe</label><br>
           <input type="password" id="password" name="password" minlength="8" required><br>
           <input type="submit" class="envoi" value="Se connecter"><br>
+          <router-link :to="'/ListCourses'">Choix du cours</router-link>
         </form>
       </div>
     </div>
