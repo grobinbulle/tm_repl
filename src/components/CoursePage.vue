@@ -8,7 +8,8 @@
       <Menubar :model="item" style="margin-top: -65px; width: 101.3%; position: fixed; z-index: 4; margin-left : 0%; margin-right: -11%; max-height: 65px;">
         <!-- éléments à gauche du menu -->
         <template #start> 
-          <Button class="but-menubar"><router-link :to="'/'">Retour à la page d'accueil</router-link></Button>          <Button icon="pi pi-arrow-right" @click="visibleLeft = true" class="p-mr-2 arrow-but"/>
+          <Button class="but-menubar"><router-link :to="'/'" class="menurouter">Retour à la page d'accueil</router-link></Button>          
+          <Button icon="pi pi-arrow-right" @click="visibleLeft = true" class="p-mr-2 arrow-but"/>
         </template>
         <!-- élément à doite du menu -->
         <template #end>
@@ -52,7 +53,7 @@
       <!-- création d'une div englobant les éléments de fin de page -->
       <div class="findepage" style="margin-top: 5%; float: none">
         <ToggleButton v-model="checked" onLabel="J'ai compris le contenu de ce chapitre" offLabel="Cliquez pour valider ce chapitre" onIcon="pi pi-check" offIcon="pi pi-times" id="valider" />
-        <Button class="p-button-raised" id="exercice" style="position: center; min-height: 100%;"><router-link :to="'/Exercice'">Aller vers les exercices</router-link></Button>
+        <Button class="p-button-raised" id="exercice" style="position: center; min-height: 100%;"><router-link :to="'/Exercice'" class="routerexercice">Aller vers les exercices</router-link></Button>
       </div>
     </div>
     </div>
@@ -142,6 +143,14 @@ export default {
   padding-bottom: 4%;
   padding-right: 1%;
   background: linear-gradient(to bottom left, #E1E1E1 50%, #F1F1F1 50%) no-repeat center center fixed;
+}
+.routerexercice{
+  color: white;
+  text-decoration : none;
+}
+.menurouter{
+  color: grey;
+  text-decoration : none;
 }
 .p-inputtext-lg{
   width: 100%;

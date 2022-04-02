@@ -5,7 +5,7 @@
       <Menubar :model="item" style="margin-top: -65px; width: 102%; position: fixed; z-index: 4; margin-left : 0%; margin-right: -11%; max-height: 65px;">
         <!-- éléments à gauche du menu -->
         <template #start> 
-          <Button class="but-menubar"><router-link :to="'/'">Retour à la page d'accueil</router-link></Button>
+          <Button class="but-menubar"><router-link :to="'/'" class="menurouter">Retour à la page d'accueil</router-link></Button>
         </template>
         <!-- élément à doite du menu -->
         <template #end>
@@ -23,7 +23,7 @@
           <label for="password">Mot de passe</label><br>
           <input type="password" id="password" name="password" minlength="8" required><br>
           <input type="submit" class="envoi" value="Se connecter"><br>
-          <router-link :to="'/ListCourses'">Choix du cours</router-link>
+          <Button style="background-color: #5c7fd4; border-color: #5c7fd4;"><router-link :to="'/ListCourses'" class="rlink">Choix du cours</router-link></Button>
         </form>
       </div>
     </div>
@@ -42,6 +42,14 @@
   margin-bottom: -5%;
   padding-bottom: 10%;
   background: linear-gradient(to bottom left, #5c7fd4 50%, #D3D3D3 50%) no-repeat center center fixed;
+}
+.menurouter{
+  color: grey;
+  text-decoration: none;
+}
+.rlink{
+  color: white;
+  text-decoration: none;
 }
 .but-menubar{
   font-size: 2vh;

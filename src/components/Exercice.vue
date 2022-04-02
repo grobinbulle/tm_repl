@@ -6,7 +6,7 @@
           <Menubar :model="item" style="margin-top: -65px; width: 102%; position: fixed; z-index: 4; margin-left : 0.5%; margin-right: -14%; max-height: 65px;">
             <!-- éléments à gauche du menu -->
             <template #start> 
-              <Button class="but-menubar"><router-link :to="'/'">Retour à la page d'accueil</router-link></Button>
+              <Button class="but-menubar"><router-link :to="'/'" class="menurouter">Retour à la page d'accueil</router-link></Button>
               <Button icon="pi pi-arrow-right" @click="visibleLeft = true" class="p-mr-2 arrow-but"/>
             </template>
             <!-- élément à doite du menu -->
@@ -33,8 +33,8 @@
             </div>
             <div class="send">
               <ToggleButton v-model="checked" onLabel="Votre réponse a été envoyée" offLabel="Envoyer votre réponse" onIcon="pi pi-check" offIcon="pi pi-times" id="valider" />
-              <Button style="background-color: #D3D3D3; border-color: #D3D3D3; color: #696969; justify-content: center;" class="backtheorie"><router-link :to="'/CoursePage'">Revenir à la théorie</router-link></Button>
-              <Button style="background-color: #D3D3D3; border-color: #D3D3D3; color: #696969; justify-content: center;" class="backtheorie"><router-link :to="'/Resume'">Aller au résumé</router-link></Button>
+              <Button style="background-color: #D3D3D3; border-color: #D3D3D3; color: #696969; justify-content: center;" class="backtheorie"><router-link :to="'/CoursePage'" class="rlink">Revenir à la théorie</router-link></Button>
+              <Button style="background-color: #D3D3D3; border-color: #D3D3D3; color: #696969; justify-content: center;" class="backtheorie"><router-link :to="'/Resume'" class="rlink">Aller au résumé</router-link></Button>
             </div>
           </div>
         </div>
@@ -96,6 +96,14 @@ h1{
 /* css du contenu de la page*/
 .content{
   display: inline-block;
+}
+.menurouter{
+  color: grey;
+  text-decoration: none;
+}
+.rlink{
+  color: grey;
+  text-decoration: none;
 }
 .but-menubar{
   font-size: 2vh;
