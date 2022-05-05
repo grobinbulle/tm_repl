@@ -20,7 +20,7 @@
           <h3 style="color: #5c7fd4; text-align: left; width:80%;   font-size: 150%;"> 21Learning est la toute nouvelle plateforme du cours d'informatique au Collège du Sud. Elle présente un design retravaillé visant un apprentissage de meilleure qualité.</h3>
         </div>
         <div>
-          <Button class="boutons" style="background-color: white; color: #5c7fd4; margin: 0.15em; width: 15%; height: 30%; margin-left: 0.5%; margin-right: 0.5%; color: white;" v-on:click=""><router-link :to="'/signup'" class="rlink">S'inscrire</router-link></Button>
+          <Button class="boutons" style="background-color: white; color: #5c7fd4; margin: 0.15em; width: 15%; height: 30%; margin-left: 0.5%; margin-right: 0.5%; color: white;"><router-link :to="'/signup'" class="rlink">S'inscrire</router-link></Button>
           <Button class="boutons" style="background-color: #5c7fd4; border-color: #5c7fd4;margin: 0.15em; width: 15%; height: 30%; margin-left: 0.5%; margin-right: 0.5%;"><router-link :to="'/login'" class="rlink2">Se connecter</router-link></Button>
         </div>
       </div>
@@ -33,10 +33,8 @@
 </script>
 <style scoped>
 .allpage{
-  width: 101%;
-  height: 119%;
-  margin-left: -0.5%;
-  margin-right: -0.5%;
+  width: 102%;
+  min-height:100vh;
   margin-top: -0.5%;
   margin-bottom: -0.5%;
   padding-bottom: 10%;

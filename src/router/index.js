@@ -12,14 +12,14 @@ import TableMatiere from '/src/components/TableMatiere.vue'
 
 const routes = [
     {
-        path: '/signup',
-        name: 'signup',
-        component: signup,
-    },
-    {
         path: '/',
         name: 'Index',
         component: Index,
+    },
+    {
+        path: '/signup',
+        name: 'signup',
+        component: signup,
     },
     {
         path: '/CoursePage',

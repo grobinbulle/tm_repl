@@ -3,7 +3,7 @@
       <div class="page" :class="{'page-shift': visibleLeft, 'page-normal': !visibleLeft}" style="height: 100%;">
         <div class="menubar-css">
           <!-- création du menu-haut -->
-          <Menubar :model="item" style="margin-top: -65px; width: 102%; position: fixed; z-index: 4; margin-left : 0.5%; margin-right: -14%; max-height: 65px;">
+          <Menubar :model="item" style="margin-top: -65px; width: 101%; position: fixed; z-index: 4; margin-left : 0%; margin-right: -0%; max-height: 65px;">
             <!-- éléments à gauche du menu -->
             <template #start> 
               <Button class="but-menubar"><router-link :to="'/'" class="menurouter">Retour à la page d'accueil</router-link></Button>
@@ -155,10 +155,8 @@ label{
   height: 10vh;
 }
 .allpage{
-  width: 105%;
-  height: 105%;
-  margin-left: -2%;
-  margin-right: -3%;
+  width: 102%;
+  min-height:100vh;
   margin-top: 0%;
   margin-bottom: -5%;
   padding-bottom: 20%;

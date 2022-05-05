@@ -55,8 +55,8 @@
 }
 
 .allpage{
-  width: 103%;
-  height: 110%;
+  width: 102%;
+  min-height:100vh;
   margin-left: -1.5%;
   margin-right: -1.5%;
   margin-top: 0%;

@@ -34,8 +34,8 @@ Phasellus bibendum turpis ut ipsum egestas, sed sollicitudin elit convallis.
 Cras pharetra mi tristique sapien vestibulum lobortis. Nam eget bibendum metus, 
 non dictum mauris. Nulla at tellus sagittis, viverra est a, bibendum metus.
         </p>
-      </div>
       <Button>Passer au prochain chapitre</Button>
+      </div>
     </div>
   </div>
 </template>
@@ -75,8 +75,8 @@ non dictum mauris. Nulla at tellus sagittis, viverra est a, bibendum metus.
 .toutepage{
   margin-left: auto;
   margin-top: auto;
-  width: 210vh;
-  height: 103vh;
+  width: 100%;
+  min-height:100vh;
   animation: fadein 1s;
   background: linear-gradient(to bottom left, #5c7fd4 50%, #D3D3D3 50%) no-repeat center center fixed;
 }

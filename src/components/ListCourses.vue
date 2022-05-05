@@ -2,7 +2,7 @@
   <div class="allpage">
     <div class="menubar-css">
       <!-- création du menu-haut -->
-      <Menubar :model="item" style="margin-top: -65px; width: 101.3%; position: fixed; z-index: 4; margin-left : 0%; margin-right: -11%; max-height: 65px;">
+      <Menubar :model="item" style="margin-top: -65px; width: 100%; position: fixed; z-index: 4; margin-left : 0%; margin-left: -0%; max-height: 65px;">
         <!-- éléments à gauche du menu -->
         <template #start> 
           <Button class="but-menubar"><router-link :to="'/'" class="menurouter">Retour à la page d'accueil</router-link></Button>
@@ -176,11 +176,9 @@ p {
   margin-bottom: -18%;
 }
 .allpage{
-  width: 105%;
-  margin-left: -1.5%;
-  margin-right: -1.5%;
+  width: 101%;
+  min-height:100vh;
   margin-top: 0%;
-  height: 105%;
   margin-bottom: -5%;
   padding-bottom: 10%;
   padding-right: 5%;

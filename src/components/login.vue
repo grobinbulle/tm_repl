@@ -34,14 +34,13 @@
   export default {
 }
 .allpage{
-  height: 110%;
-  width: 104%;
-  margin-left: -2%;
-  margin-right: -2%;
+  width: 101%;
+  min-height:100vh;
   margin-top: 0%;
   margin-bottom: -5%;
   padding-bottom: 10%;
   background: linear-gradient(to bottom left, #5c7fd4 50%, #D3D3D3 50%) no-repeat center center fixed;
+  margin-left: -0.5%;
 }
 .menurouter{
   color: grey;
@@ -87,17 +86,16 @@ label{
 .toutepage{
   padding-bottom: 10%;
   padding-top: 10%;
-  margin-left: -15%;
   margin-top: auto;
   margin-bottom: auto;
   animation: fadein 1s;
-
 }
 /* contenu de toute la page*/
   .content{
     text-align: left;
     display: inline-block;
-    margin-left: -5%;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 150%;
     vertical-align: middle;
   }
