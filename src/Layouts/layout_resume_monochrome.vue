@@ -40,10 +40,8 @@
     }
 }
 .allpage{
-  width: 103%;
-  height: 103%;
-  margin-left: -1.5%;
-  margin-right: -1.5%;
+  width: 102%;
+  min-height:100vh;
   margin-top: 0%;
   margin-bottom: -1.5%;
 }

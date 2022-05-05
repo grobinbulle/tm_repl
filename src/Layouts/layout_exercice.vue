@@ -141,10 +141,8 @@ label{
   height: 10vh;
 }
 .allpage{
-  width: 105%;
-  height: 105%;
-  margin-left: -2%;
-  margin-right: -3%;
+  width: 102%;
+  min-height:100vh;
   margin-top: 0%;
   margin-bottom: -5%;
   padding-bottom: 20%;

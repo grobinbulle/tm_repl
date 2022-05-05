@@ -133,9 +133,8 @@ export default {
     }  
 }
 .allpage{
-  height: 103%;
-  margin-left: -1%;
-  margin-right: -2%;
+  width: 102%;
+  min-height:100vh;
   margin-top: 0%;
   margin-bottom: -5%;
   padding-bottom: 4%;
