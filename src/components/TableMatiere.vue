@@ -136,8 +136,6 @@ p {
 }
 .but-menubar{
   font-size: 2vh;
-  width : 18vh;
-  height: 7vh;
   align-items: center;
 }
 .user-but{
