@@ -66,19 +66,17 @@ non dictum mauris. Nulla at tellus sagittis, viverra est a, bibendum metus.
 }
   .content{
     text-align: left;
-    margin-left: 13%;
+    margin-left: 10%;
     font-size: 120%;
     vertical-align: middle;
     max-width: 70%;
-    margin-top: -6%;
+    margin-top: 0%;
   }
 .toutepage{
-  padding-top: 15%;
-  padding-bottom: 15%;
-  margin-left: 0%;
-  margin-top: 0%;
-  width: 103%;
-  height: 103%;
+  margin-left: auto;
+  margin-top: auto;
+  width: 210vh;
+  height: 103vh;
   animation: fadein 1s;
   background: linear-gradient(to bottom left, #5c7fd4 50%, #D3D3D3 50%) no-repeat center center fixed;
 }
