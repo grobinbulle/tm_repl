@@ -145,7 +145,7 @@ export default {
   background: linear-gradient(to bottom left, #E1E1E1 50%, #F1F1F1 50%) no-repeat center center fixed;
 }
 .Message{
-  max-width : 78%;
+  max-width : 80%;
   margin-left : 10%;
 }
 .p-inputtext-lg{

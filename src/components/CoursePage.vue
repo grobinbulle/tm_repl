@@ -26,7 +26,11 @@
         <!-- appel de la barre latérale -->
         <Sidebar v-model:visible="visibleLeft" :modal="false" :autoZIndex="true">
           <p>Naviguer dans ce chapitre</p>
-          <PanelMenu :model="items" />
+          <div>
+              <Button type="button" icon="pi pi-plus" label="étendre" @click="expandAll" />
+              <Button type="button" icon="pi pi-minus" label="réduire" @click="collapseAll" />
+          </div>
+          <PanelMenu :model="items" v-model:expandedKeys="expandedKeys"></PanelMenu>
         </Sidebar>
         <div class="contenu">  
                   <!-- ajout du contenu textuel de notre cour -->
@@ -156,7 +160,7 @@ export default {
 }
 
 .Message{
-  max-width : 78%;
+  max-width : 80%;
   margin-left : 10%;
 }
 .p-inputtext-lg{

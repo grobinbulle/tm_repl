@@ -135,7 +135,7 @@ export default {
     }  
 }
 .Message{
-  max-width : 78%;
+  max-width : 80%;
   margin-left : 10%;
 }
 .allpage{
