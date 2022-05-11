@@ -42,6 +42,7 @@
             <iframe width="80%" height="80%" src="https://www.youtube.com/embed/vMVg9QMOxvk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <figure><img src="../assets/nao.jpg" style="height : 85%; width: 60%; margin:left: 50%; margin-right: 0%; margin-top: 0%;"/><figcaption>Le robot nao</figcaption></figure>
           </div>
+          <Message class="Message" severity="warn" :closable="false">Il est important de noter que nous utilisions dans ce cours le robot micro:bit</Message>        
         </div>
       </div>
       <div style="margin-top: 0%; z-index: 1; float: none; width: 80%; height : 60%; font-size: 20px; text-align : left; margin-right : auto; margin-left: auto; font-size: 25px;">
@@ -152,6 +153,11 @@ export default {
 .menurouter{
   color: grey;
   text-decoration : none;
+}
+
+.Message{
+  max-width : 78%;
+  margin-left : 10%;
 }
 .p-inputtext-lg{
   width: 100%;

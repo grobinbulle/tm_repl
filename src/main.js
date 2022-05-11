@@ -19,6 +19,7 @@ import Card from 'primevue/card';
 import Checkbox from 'primevue/checkbox';
 import Editor from 'primevue/editor';
 import ToggleButton from 'primevue/togglebutton';
+import Message from 'primevue/message';
 import CoursePage from './components/CoursePage.vue'
 import Index from './components/Index.vue'
 import signup from './components/signup.vue'
@@ -36,6 +37,7 @@ import 'primeicons/primeicons.css';
 app.use(router)
 app.use(PrimeVue);
 
+app.component('Message', Message)
 app.component('ToggleButton', ToggleButton)
 app.component('Editor', Editor)
 app.component('Button', Button);
