@@ -138,6 +138,9 @@ export default {
   max-width : 80%;
   margin-left : 10%;
 }
+h5{
+  font-weight: normal;
+}
 .allpage{
   width: 102%;
   min-height:100vh;

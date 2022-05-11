@@ -144,6 +144,9 @@ export default {
   padding-right: 1%;
   background: linear-gradient(to bottom left, #E1E1E1 50%, #F1F1F1 50%) no-repeat center center fixed;
 }
+h5{
+  font-weight: normal;
+}
 .Message{
   max-width : 80%;
   margin-left : 10%;

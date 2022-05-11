@@ -158,7 +158,9 @@ export default {
   color: grey;
   text-decoration : none;
 }
-
+h5{
+  font-weight: normal;
+}
 .Message{
   max-width : 80%;
   margin-left : 10%;
