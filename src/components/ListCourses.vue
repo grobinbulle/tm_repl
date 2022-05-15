@@ -186,6 +186,9 @@ p {
   padding-right: 2%;
   background: linear-gradient(to bottom left, #E1E1E1 50%, #F1F1F1 50%) no-repeat center center fixed;
 }
+.content{
+  max-width: 102%;
+}
 /* Autres boutons de la page*/
 Button{
   margin: 5px;

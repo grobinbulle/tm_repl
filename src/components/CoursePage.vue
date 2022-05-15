@@ -79,7 +79,7 @@ export default {
                     items: [{
                             key: '0_0',
                             label: '2.1 Le monde des robots',
-                            to: '/CoursePage'
+                            to: 'CoursePage'
                         },
                         {
                             key: '0_1',
@@ -105,6 +105,24 @@ export default {
                         {
                             key: '1_2',
                             label: '1.3. Grammaires',
+                        },
+                        
+                    ]
+                },
+                {
+                    key: '2',
+                    label: 'Programmation système',
+                    items: [{
+                            key: '2_0',
+                            label: '1.1. Introduction aux fichiers',
+                        },
+                        {
+                            key: '2_1',
+                            label: '1.2. Systèmes de fichiers',
+                        },
+                        {
+                            key: '2_2',
+                            label: '1.3. Sauvegarder des données de manière permanente',
                         },
                         
                     ]
@@ -136,7 +154,9 @@ export default {
             }
         }
     },
-
+    mounted() {
+        this.expandedKeys[this.items[0.0_1]] = true;
+    }
 }
 
 
