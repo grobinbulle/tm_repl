@@ -27,8 +27,8 @@
         <Sidebar v-model:visible="visibleLeft" :modal="false" :autoZIndex="true">
           <p>Naviguer dans ce chapitre</p>
           <div>
-              <Button type="button" icon="pi pi-plus" label="étendre" @click="expandAll" />
-              <Button type="button" icon="pi pi-minus" label="réduire" @click="collapseAll" />
+              <Button type="buttonside" icon="pi pi-plus" label="étendre" @click="expandAll" />
+              <Button type="buttonside" icon="pi pi-minus" label="réduire" @click="collapseAll" />
           </div>
           <PanelMenu :model="items" v-model:expandedKeys="expandedKeys"></PanelMenu>
         </Sidebar>
@@ -133,7 +133,8 @@ export default {
                 }
             }
         }
-    }
+    },
+
 }
 
 
@@ -176,6 +177,7 @@ export default {
         }
     }  
 }
+
 .allpage{
   width: 102%;
   min-height:100vh;
