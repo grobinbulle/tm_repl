@@ -28,7 +28,7 @@
                 quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
             </template>
             <template #footer>
-              <Button class="Bouton"><router-link :to="'/TableMatiere'" class="rlink">Aller au cours</router-link></Button>
+              <Button class="Bouton"><router-link :to="'/TableMatiere'" class="rlink">Aller au chapitre</router-link></Button>
             </template>
           </Card>
           <Card class="carte" id="c2">
@@ -42,7 +42,7 @@
                 quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
             </template>
             <template #footer>
-              <Button class="Bouton"><router-link :to="'/TableMatiere'" class="rlink">Aller au cours</router-link></Button>
+              <Button class="Bouton"><router-link :to="'/TableMatiere'" class="rlink">Aller au chapitre</router-link></Button>
             </template>
           </Card>
           <Card class="carte" id="c3">
@@ -56,7 +56,7 @@
                 quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
             </template>
             <template #footer>
-              <Button class="Bouton"><router-link :to="'/TableMatiere'" class="rlink">Aller au cours</router-link></Button>
+              <Button class="Bouton"><router-link :to="'/TableMatiere'" class="rlink">Aller au chapitre</router-link></Button>
             </template>
           </Card>
           <Card class="carte" id="c4">
@@ -70,7 +70,7 @@
                 quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
             </template>
             <template #footer>
-              <Button class="Bouton"><router-link :to="'/TableMatiere'" class="rlink">Aller au cours</router-link></Button>
+              <Button class="Bouton"><router-link :to="'/TableMatiere'" class="rlink">Aller au chapitre</router-link></Button>
             </template>
           </Card>
           <Card class="carte" id="c5">
@@ -84,7 +84,7 @@
                 quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
             </template>
             <template #footer>
-              <Button class="Bouton"><router-link :to="'/Tablematiere'" class="rlink">Aller au cours</router-link></Button>
+              <Button class="Bouton"><router-link :to="'/Tablematiere'" class="rlink">Aller au chapitre</router-link></Button>
             </template>
           </Card>
           <Card class="carte" id="c6">
@@ -98,7 +98,7 @@
                 quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
             </template>
             <template #footer>
-              <Button class="Bouton"><router-link :to="'/TableMatiere'" class="rlink">Aller au cours</router-link></Button>
+              <Button class="Bouton"><router-link :to="'/TableMatiere'" class="rlink">Aller au chapitre</router-link></Button>
             </template>
           </Card>
         </div>
