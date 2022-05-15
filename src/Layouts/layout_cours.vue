@@ -26,7 +26,11 @@
         <!-- appel de la barre latérale -->
         <Sidebar v-model:visible="visibleLeft" :modal="false" :autoZIndex="true">
           <p>Naviguer dans ce chapitre</p>
-          <PanelMenu :model="items" />
+          <div>
+              <Button type="button" icon="pi pi-plus" label="étendre" @click="expandAll" />
+              <Button type="button" icon="pi pi-minus" label="réduire" @click="collapseAll" />
+          </div>
+          <PanelMenu :model="items" v-model:expandedKeys="expandedKeys"></PanelMenu>
         </Sidebar>
         <div class="contenu">  
                   <!-- ajout du contenu textuel de notre cour -->
@@ -69,33 +73,71 @@ export default {
   data() {
     return {
       visibleLeft: true,
-      items: [
-                {
-                    label: 'Chapitre 1',
-                    items: [
-                      {
-                          label: 'Chapitre 1.1',
-                          items: [
-                            {
-                                label: 'Chapitre 1.1.1',
-                            },
-                            {
-                                label: 'Chapitre 1.1.2',
-                            }
-                          ]
-                      },
-                      {
-                          label: 'Chapitre 1.2',
-                      },
-                      {
-                          label: 'Chapitre 1.3',
-                      }
+      checked: false,
+      items: [{
+                    key: '0',
+                    label: 'Robotique',
+                    items: [{
+                            key: '0_0',
+                            label: '2.1 Le monde des robots',
+                        },
+                        {
+                            key: '0_1',
+                            label: '2.2 Mettre le robot en mouvement',
+                        },
+                        {
+                            key: '0_2',
+                            label: '2.3. Le robot réagit à son environnement',
+                        }
                     ]
                 },
-              ]
-		}
-	}
+                {
+                    key: '1',
+                    label: 'Programmation',
+                    items: [{
+                            key: '1_0',
+                            label: '1.1. Introduction au chapitre',
+                        },
+                        {
+                            key: '1_1',
+                            label: '1.2. Alphabets, mots et langages',
+                        },
+                        {
+                            key: '1_2',
+                            label: '1.3. Grammaires',
+                        },
+                        
+                    ]
+                },
+            ],
+            expandedKeys: {}
+        }
+    },
+    methods: {
+        expandAll() {
+            for (let node of this.items) {
+                this.expandNode(node);
+            }
+
+            this.expandedKeys = {
+                ...this.expandedKeys
+            };
+        },
+        collapseAll() {
+            this.expandedKeys = {};
+        },
+        expandNode(node) {
+            if (node.items && node.items.length) {
+                this.expandedKeys[node.key] = true;
+
+                for (let child of node.items) {
+                    this.expandNode(child);
+                }
+            }
+        }
+    }
 }
+
 
 </script>
 

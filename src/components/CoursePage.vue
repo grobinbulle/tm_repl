@@ -43,8 +43,8 @@
           </div>
           <div class="visuel">
             <!-- ajout de l'image du robot -->
-            <iframe width="80%" height="80%" src="https://www.youtube.com/embed/vMVg9QMOxvk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <figure><img src="../assets/nao.jpg" style="height : 85%; width: 60%; margin:left: 50%; margin-right: 0%; margin-top: 0%;"/><figcaption>Le robot nao</figcaption></figure>
+            <iframe width="56%" height="70%" src="https://www.youtube.com/embed/vMVg9QMOxvk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <figure><img src="../assets/nao.jpg" style="height : 50%; width: 50%; margin:left: 50%; margin-right: 0%; margin-top: 0%;"/><figcaption>Le robot nao</figcaption></figure>
           </div>
           <Message class="Message" severity="warn" :closable="false">Il est important de noter que nous utilisons dans ce cours le robot micro:bit</Message>        
         </div>
@@ -72,33 +72,70 @@ export default {
     return {
       visibleLeft: true,
       checked: false,
-      items: [
-                {
-                    label: 'Chapitre 1',
-                    items: [
-                      {
-                          label: 'Chapitre 1.1',
-                          items: [
-                            {
-                                label: 'Chapitre 1.1.1',
-                            },
-                            {
-                                label: 'Chapitre 1.1.2',
-                            }
-                          ]
-                      },
-                      {
-                          label: 'Chapitre 1.2',
-                      },
-                      {
-                          label: 'Chapitre 1.3',
-                      }
+      items: [{
+                    key: '0',
+                    label: 'Robotique',
+                    items: [{
+                            key: '0_0',
+                            label: '2.1 Le monde des robots',
+                        },
+                        {
+                            key: '0_1',
+                            label: '2.2 Mettre le robot en mouvement',
+                        },
+                        {
+                            key: '0_2',
+                            label: '2.3. Le robot réagit à son environnement',
+                        }
                     ]
                 },
-              ]
-		}
-	}
+                {
+                    key: '1',
+                    label: 'Programmation',
+                    items: [{
+                            key: '1_0',
+                            label: '1.1. Introduction au chapitre',
+                        },
+                        {
+                            key: '1_1',
+                            label: '1.2. Alphabets, mots et langages',
+                        },
+                        {
+                            key: '1_2',
+                            label: '1.3. Grammaires',
+                        },
+                        
+                    ]
+                },
+            ],
+            expandedKeys: {}
+        }
+    },
+    methods: {
+        expandAll() {
+            for (let node of this.items) {
+                this.expandNode(node);
+            }
+
+            this.expandedKeys = {
+                ...this.expandedKeys
+            };
+        },
+        collapseAll() {
+            this.expandedKeys = {};
+        },
+        expandNode(node) {
+            if (node.items && node.items.length) {
+                this.expandedKeys[node.key] = true;
+
+                for (let child of node.items) {
+                    this.expandNode(child);
+                }
+            }
+        }
+    }
 }
+
 
 </script>
 
