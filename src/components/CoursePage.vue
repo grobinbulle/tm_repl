@@ -30,7 +30,8 @@
               <Button type="buttonside" icon="pi pi-plus" label="étendre" @click="expandAll" />
               <Button type="buttonside" icon="pi pi-minus" label="réduire" @click="collapseAll" />
           </div>
-          <PanelMenu :model="items" v-model:expandedKeys="expandedKeys"></PanelMenu>
+          <PanelMenu :model="items" v-model:expandedKeys="expandedKeys">
+          </PanelMenu>
         </Sidebar>
         <div class="contenu">  
                   <!-- ajout du contenu textuel de notre cour -->
@@ -78,6 +79,7 @@ export default {
                     items: [{
                             key: '0_0',
                             label: '2.1 Le monde des robots',
+                            to: '/CoursePage'
                         },
                         {
                             key: '0_1',
