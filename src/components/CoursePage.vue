@@ -58,6 +58,7 @@
       </div>
       <!-- création d'une div englobant les éléments de fin de page -->
       <div class="findepage" style="margin-top: 5%; float: none">
+        <Button class="p-button-raised" id="exercice" style="position: center; min-height: 100%;"><router-link :to="'/CoursePage'" class="routerexercice">Aller au chapitre précédent</router-link></Button>
         <ToggleButton v-model="checked" onLabel="J'ai compris le contenu de ce chapitre" offLabel="Cliquez pour valider ce chapitre" onIcon="pi pi-check" offIcon="pi pi-times" id="valider" />
         <Button class="p-button-raised" id="exercice" style="position: center; min-height: 100%;"><router-link :to="'/Exercice'" class="routerexercice">Aller vers les exercices</router-link></Button>
       </div>
@@ -248,8 +249,8 @@ figcaption{
 }
 /* css du bouton des exercices*/
 #exercice{
-  background-color: #ff8000;
-  border-color: #ff8000;
+  background-color: #5c7fd4;
+  border-color: #5c7fd4;
   color: white;
   display: inline-block;
   font-size: 120%;
@@ -260,7 +261,7 @@ figcaption{
   margin-bottom: 0.3%;
 }
 #exercice:hover{
-  background-color: orange;
+  background-color: blue;
   transition-duration: .5s;
 }
 
